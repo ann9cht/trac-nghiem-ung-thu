@@ -1,0 +1,61 @@
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    #quiz-screen .main-content {
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    #quiz-screen .sidebar {
+        order: 2;
+    }
+
+    .index-box {
+        max-height: 200px;
+        margin-bottom: 10px;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+
+    .index-grid {
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    .navigation-buttons {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .nav-right {
+        display: flex;
+        width: 85%;
+        max-width: 300px;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .nav-right .btn {
+        flex: 1;
+        text-align: center;
+    }
+
+    .btn-warning {
+        width: auto;
+        padding: 10px 20px;
+        text-align: center;
+    }
+}
