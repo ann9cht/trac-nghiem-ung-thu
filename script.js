@@ -151,6 +151,13 @@ function selectAnswer(selectedIndex, btnElement) {
     renderQuestion();
     updateStats();
     renderIndexGrid();
+
+    const autoNext = document.getElementById('toggle-auto-next');
+    if (autoNext && autoNext.checked) {
+        setTimeout(() => {
+            nextQuestion();
+        }, 750);
+    }
 }
 
 function renderIndexGrid() {

@@ -101,7 +101,7 @@ const database = [
                 correctIndex: 3
             },
             {
-                q: "Qua các nghiên cứu dịch tễ học của R.Doll và Petro trên 80% tác nhân sinh",
+                q: "Qua các nghiên cứu dịch tễ học của R.Doll và Petro trên 80% tác nhân sinh ung thư bắt nguồn từ",
                 options: [
                     "Môi trường sống",
                     "Chế độ uống",

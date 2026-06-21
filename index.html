@@ -15,12 +15,14 @@
 <body>
     <div id="home-screen" class="container">
         <aside class="sidebar">
-            <h2>Ung Thư đại cương</h2>
-            <p>Trắc nghiệm ôn tập</p>
-            <p class="author-credits">[Bảo An]</p>
+            <div style="border-bottom: 1px solid #eee; padding-bottom: 10px;">
+                <h2 style="margin: 0 0 5px 0;">Ung Thư đại cương</h2>
+                <p style="margin: 0; color: #333;">Trắc nghiệm ôn tập</p>
+                <p style="text-align: right; font-size: 13px; color: #999; font-style: italic; margin: 30px 0 0 0;">[Bảo An - 21YB]</p>
+            </div>
             
-            <div class="settings-box">
-                <h3>Tùy chỉnh</h3>
+            <div class="settings-box" style="margin-top: -5px; padding-top: 0; border-top: none;">
+                <h3 style="margin-top: 0;">Tùy chỉnh</h3>
                 <div class="setting-item">
                     <span>Đảo câu hỏi</span>
                     <label class="switch">
@@ -51,7 +53,15 @@
             <div class="stats-box">
                 <h3>Kết quả</h3>
                 <p>Đã làm: <span id="completed-count">0</span>/<span id="total-count">0</span></p>
-                <p>Số câu đúng: <span id="correct-count">0</span></p>
+                <p style="margin-bottom: 5px;">Số câu đúng: <span id="correct-count">0</span></p>
+                
+                <div class="setting-item" style="margin-top: 10px; border-top: 1px dashed #ccc; padding-top: 10px;">
+                    <span style="font-size: 14px; font-weight: 600;">Tự chuyển câu</span>
+                    <label class="switch">
+                        <input type="checkbox" id="toggle-auto-next" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
             </div>
             <div class="index-box">
                 <h3 class="index-title">Mục lục</h3>
