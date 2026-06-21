@@ -58,4 +58,9 @@
         padding: 10px 20px;
         text-align: center;
     }
+    
+    #question-index {
+    min-height: 280px !important;
+    max-height: 50vh !important;
+    }
 }
