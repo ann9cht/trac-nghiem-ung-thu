@@ -8,13 +8,6 @@ const homeScreen = document.getElementById('home-screen');
 const quizScreen = document.getElementById('quiz-screen');
 const lessonListEl = document.getElementById('lesson-list');
 
-function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]]; 
-    }
-}
-
 function initHome() {
     lessonListEl.innerHTML = '';
     database.forEach((lesson, index) => {
@@ -47,8 +40,8 @@ function startLesson(index) {
 
     currentQuestionIndex = 0;
     userAnswers = {}; 
-    
     currentFilter = 'all';
+    
     document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
     const allBtn = document.querySelector(".filter-btn[onclick*='all']");
     if(allBtn) allBtn.classList.add('active');
@@ -67,43 +60,6 @@ function startLesson(index) {
     updateStats();
     renderIndexGrid();
     renderQuestion();
-}
-
-function calculateFilteredIndices() {
-    let indices = [];
-    for (let i = 0; i < activeLesson.questions.length; i++) {
-        const isAnswered = userAnswers.hasOwnProperty(i);
-        
-        if (currentFilter === 'answered' && !isAnswered) continue;
-        
-        if (currentFilter === 'redo' && isAnswered && userAnswers[i].isCorrect) continue;
-        
-        indices.push(i);
-    }
-    return indices;
-}
-
-function applyFilter(value, btnElement = null) {
-    currentFilter = value;
-    
-    if (btnElement) {
-        document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
-        btnElement.classList.add('active');
-    }
-
-    activeIndices = calculateFilteredIndices(); 
-    
-    if (activeIndices.length > 0) {
-        if (!activeIndices.includes(currentQuestionIndex)) {
-            currentQuestionIndex = activeIndices[0];
-        }
-        renderIndexGrid();
-        renderQuestion();
-    } else {
-        renderIndexGrid();
-        document.getElementById('question-text').innerText = "Bạn chưa làm câu nào cả!";
-        document.getElementById('options-container').innerHTML = '';
-    }
 }
 
 function renderQuestion() {
@@ -160,6 +116,88 @@ function selectAnswer(selectedIndex, btnElement) {
     }
 }
 
+function prevQuestion() {
+    if (activeIndices.length === 0) return;
+    const currentIndexPos = activeIndices.indexOf(currentQuestionIndex);
+    
+    if (currentIndexPos > 0) {
+        currentQuestionIndex = activeIndices[currentIndexPos - 1];
+    } else {
+        currentQuestionIndex = activeIndices[activeIndices.length - 1]; // Quay đuôi
+    }
+    renderQuestion();
+}
+
+function nextQuestion() {
+    if (activeIndices.length === 0) return;
+    const currentIndexPos = activeIndices.indexOf(currentQuestionIndex);
+    
+    if (currentIndexPos !== -1 && currentIndexPos < activeIndices.length - 1) {
+        currentQuestionIndex = activeIndices[currentIndexPos + 1];
+    } else {
+        currentQuestionIndex = activeIndices[0]; // Quay đầu
+    }
+    renderQuestion();
+}
+
+function redoMistakes() {
+    document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+    
+    for (let i = 0; i < activeLesson.questions.length; i++) {
+        if (userAnswers.hasOwnProperty(i) && !userAnswers[i].isCorrect) {
+            delete userAnswers[i];
+        }
+    }
+
+    currentFilter = 'redo';
+    activeIndices = calculateFilteredIndices(); 
+    
+    if (activeIndices.length > 0) {
+        currentQuestionIndex = activeIndices[0]; 
+        updateStats();
+        renderIndexGrid();
+        renderQuestion();
+    } else {
+        document.getElementById('custom-modal').classList.remove('hidden');
+    }
+}
+
+function calculateFilteredIndices() {
+    let indices = [];
+    for (let i = 0; i < activeLesson.questions.length; i++) {
+        const isAnswered = userAnswers.hasOwnProperty(i);
+        
+        if (currentFilter === 'answered' && !isAnswered) continue;
+        if (currentFilter === 'redo' && isAnswered && userAnswers[i].isCorrect) continue;
+        
+        indices.push(i);
+    }
+    return indices;
+}
+
+function applyFilter(value, btnElement = null) {
+    currentFilter = value;
+    
+    if (btnElement) {
+        document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+        btnElement.classList.add('active');
+    }
+
+    activeIndices = calculateFilteredIndices(); 
+    
+    if (activeIndices.length > 0) {
+        if (!activeIndices.includes(currentQuestionIndex)) {
+            currentQuestionIndex = activeIndices[0];
+        }
+        renderIndexGrid();
+        renderQuestion();
+    } else {
+        renderIndexGrid();
+        document.getElementById('question-text').innerText = "Bạn chưa làm câu nào cả!";
+        document.getElementById('options-container').innerHTML = '';
+    }
+}
+
 function renderIndexGrid() {
     const grid = document.getElementById('question-index');
     grid.innerHTML = '';
@@ -204,33 +242,20 @@ function updateStats() {
     document.getElementById('correct-count').innerText = correctCount;
 }
 
-function prevQuestion() {
-    if (activeIndices.length === 0) return;
-    const currentIndexPos = activeIndices.indexOf(currentQuestionIndex);
-    
-    if (currentIndexPos > 0) {
-        currentQuestionIndex = activeIndices[currentIndexPos - 1];
-    } else {
-        currentQuestionIndex = activeIndices[activeIndices.length - 1];
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]]; 
     }
-    renderQuestion();
-}
-
-function nextQuestion() {
-    if (activeIndices.length === 0) return;
-    const currentIndexPos = activeIndices.indexOf(currentQuestionIndex);
-    
-    if (currentIndexPos !== -1 && currentIndexPos < activeIndices.length - 1) {
-        currentQuestionIndex = activeIndices[currentIndexPos + 1];
-    } else {
-        currentQuestionIndex = activeIndices[0];
-    }
-    renderQuestion();
 }
 
 function goHome() {
     quizScreen.classList.add('hidden');
     homeScreen.classList.remove('hidden');
+}
+
+function closeModal() {
+    document.getElementById('custom-modal').classList.add('hidden');
 }
 
 document.addEventListener('keydown', function(event) {
@@ -243,40 +268,4 @@ document.addEventListener('keydown', function(event) {
     }
 });
 
-function redoMistakes() {
-    document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
-    
-    for (let i = 0; i < activeLesson.questions.length; i++) {
-        if (userAnswers.hasOwnProperty(i) && !userAnswers[i].isCorrect) {
-            delete userAnswers[i];
-        }
-    }
-
-    currentFilter = 'redo';
-    activeIndices = calculateFilteredIndices(); 
-    
-    if (activeIndices.length > 0) {
-        currentQuestionIndex = activeIndices[0]; 
-        updateStats();
-        renderIndexGrid();
-        renderQuestion();
-    } else {
-        document.getElementById('custom-modal').classList.remove('hidden');
-    }
-}
-
-function closeModal() {
-    document.getElementById('custom-modal').classList.add('hidden');
-}
-
 initHome();
-
-const filterTabs = document.querySelector('.filter-tabs');
-if (filterTabs) {
-    filterTabs.addEventListener('wheel', function(e) {
-        if (e.deltaY !== 0) {
-            e.preventDefault();
-            this.scrollLeft += e.deltaY;
-        }
-    });
-}

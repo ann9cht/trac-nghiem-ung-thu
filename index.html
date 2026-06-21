@@ -15,14 +15,14 @@
 <body>
     <div id="home-screen" class="container">
         <aside class="sidebar">
-            <div style="border-bottom: 1px solid #eee; padding-bottom: 10px;">
-                <h2 style="margin: 0 0 5px 0;">Ung Thư đại cương</h2>
-                <p style="margin: 0; color: #333;">Trắc nghiệm ôn tập</p>
-                <p style="text-align: right; font-size: 13px; color: #999; font-style: italic; margin: 30px 0 0 0;">[Bảo An - 21YB]</p>
+            <div class="sidebar-header">
+                <h2>Ung Thư đại cương</h2>
+                <p class="subtitle">Trắc nghiệm ôn tập</p>
+                <p class="author-signature">[Bảo An - 21YB]</p>
             </div>
             
-            <div class="settings-box" style="margin-top: -5px; padding-top: 0; border-top: none;">
-                <h3 style="margin-top: 0;">Tùy chỉnh</h3>
+            <div class="settings-box home-settings">
+                <h3>Tùy chỉnh</h3>
                 <div class="setting-item">
                     <span>Đảo câu hỏi</span>
                     <label class="switch">
@@ -39,6 +39,7 @@
                 </div>
             </div>
         </aside>
+        
         <main class="main-content">
             <div class="header">
                 <h3>Danh sách bài học</h3>
@@ -53,27 +54,27 @@
             <div class="stats-box">
                 <h3>Kết quả</h3>
                 <p>Đã làm: <span id="completed-count">0</span>/<span id="total-count">0</span></p>
-                <p style="margin-bottom: 5px;">Số câu đúng: <span id="correct-count">0</span></p>
+                <p class="correct-text">Số câu đúng: <span id="correct-count">0</span></p>
                 
-                <div class="setting-item" style="margin-top: 15px; border-top: 1px dashed #ccc; padding-top: 15px;">
-                    <span style="font-size: 16px; font-weight: 400; color: #333;">Tự chuyển câu</span>
+                <div class="setting-item quiz-auto-next">
+                    <span class="auto-next-label">Tự chuyển câu</span>
                     <label class="switch">
                         <input type="checkbox" id="toggle-auto-next" checked>
                         <span class="slider round"></span>
                     </label>
                 </div>
             </div>
+
             <div class="index-box">
                 <h3 class="index-title">Mục lục</h3>
-
                 <div class="filter-tabs">
                     <button class="filter-btn active" onclick="applyFilter('all', this)">Tất cả</button>
                     <button class="filter-btn" onclick="applyFilter('answered', this)">Đã làm</button>
                 </div>
-
                 <div id="question-index" class="index-grid">
-                </div>
+                    </div>
             </div>
+
             <button class="btn btn-danger" onclick="goHome()">Thoát</button>
         </aside>
         
@@ -88,7 +89,6 @@
             </div>
             <div class="navigation-buttons">
                 <button class="btn btn-warning" onclick="redoMistakes()">Làm lại các câu sai</button>
-                
                 <div class="nav-right">
                     <button class="btn" onclick="prevQuestion()">Câu trước</button>
                     <button class="btn btn-primary" onclick="nextQuestion()">Câu sau</button>

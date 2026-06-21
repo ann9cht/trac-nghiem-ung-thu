@@ -5,6 +5,14 @@
         padding-bottom: 20px;
     }
 
+    .sidebar, .main-content {
+        width: 100%;
+    }
+
+    .sidebar {
+        margin-bottom: 10px;
+    }
+
     #quiz-screen .main-content {
         order: 1;
         margin-bottom: 20px;
@@ -15,18 +23,16 @@
     }
 
     .index-box {
-    margin-bottom: 10px;
-    height: 320px !important;
-    flex: none !important;
-    }
-
-    .sidebar {
-        width: 100%;
         margin-bottom: 10px;
+        height: 320px !important;
+        flex: none !important;
     }
 
-    .main-content {
-        width: 100%;
+    #question-index {
+        height: auto !important;
+        flex: 1 !important;
+        max-height: none !important;
+        min-height: unset !important;
     }
 
     .index-grid {
@@ -35,10 +41,10 @@
     }
 
     .index-item {
-    padding: 12px 0 !important;
-    font-size: 16px !important;
-    border-radius: 6px !important;
-}
+        padding: 12px 0 !important;
+        font-size: 16px !important;
+        border-radius: 6px !important;
+    }
 
     .navigation-buttons {
         display: flex;
@@ -65,12 +71,5 @@
         width: auto;
         padding: 10px 20px;
         text-align: center;
-    }
-    
-    #question-index {
-    height: auto !important;
-    flex: 1 !important;
-    max-height: none !important;
-    min-height: unset !important;
     }
 }
