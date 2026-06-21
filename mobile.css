@@ -15,8 +15,9 @@
     }
 
     .index-box {
-        max-height: 200px;
-        margin-bottom: 10px;
+    margin-bottom: 10px;
+    height: 320px !important;
+    flex: none !important;
     }
 
     .sidebar {
@@ -60,7 +61,9 @@
     }
     
     #question-index {
-    min-height: 380px !important;
-    max-height: 65vh !important;
+    height: auto !important;
+    flex: 1 !important;
+    max-height: none !important;
+    min-height: unset !important;
     }
 }
