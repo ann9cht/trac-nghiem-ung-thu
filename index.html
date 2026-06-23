@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test ung thư</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🩺</text></svg>">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="theme.css">
+    <script src="data.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="theme.js" defer></script>
+</head>
+<body>
+    <div id="home-screen" class="container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Ung Thư đại cương</h2>
+                <p class="subtitle">Trắc nghiệm ôn tập</p>
+                <p class="author-signature">[Bảo An - 21YB]</p>
+            </div>
+            <div class="settings-box home-settings">
+                <div class="sidebar-title-row">
+                    <h3>Tùy chỉnh</h3>
+                    <button class="theme-toggle-btn" onclick="toggleDarkMode()" title="Đổi giao diện">
+                        <span class="icon-sun">☀️</span>
+                        <span class="icon-moon">🌙</span>
+                    </button>
+                </div>
+                <div class="setting-item">
+                    <span>Đảo câu hỏi</span>
+                    <label class="switch">
+                        <input type="checkbox" id="toggle-shuffle-q">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="setting-item">
+                    <span>Đảo đáp án</span>
+                    <label class="switch">
+                        <input type="checkbox" id="toggle-shuffle-a" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+        </aside>
+        <main class="main-content panel home-panel">
+            <div class="header">
+                <h3>Danh sách bài học</h3>
+            </div>
+            <div id="lesson-list" class="list-group"></div>
+        </main>
+    </div>
+    <div id="quiz-screen" class="container hidden">
+        <aside class="sidebar">
+            <div class="stats-box">
+                <div class="sidebar-title-row">
+                    <h3>Kết quả</h3>
+                    <button class="theme-toggle-btn" onclick="toggleDarkMode()" title="Đổi giao diện">
+                        <span class="icon-sun">☀️</span>
+                        <span class="icon-moon">🌙</span>
+                    </button>
+                </div>
+                <p>Đã làm: <span id="completed-count">0</span>/<span id="total-count">0</span></p>
+                <p class="correct-text">Số câu đúng: <span id="correct-count">0</span></p>
+                <div class="setting-item quiz-auto-next">
+                    <span class="auto-next-label">Tự chuyển câu</span>
+                    <label class="switch">
+                        <input type="checkbox" id="toggle-auto-next" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="index-box">
+                <div class="index-header">
+                    <h3 class="index-title">Mục lục</h3>
+                    <button class="btn-reset-icon" onclick="resetLesson()" title="Làm lại từ đầu">↻</button>
+                </div>
+                <div class="filter-tabs">
+                    <button class="filter-btn active" onclick="applyFilter('all', this)">Tất cả</button>
+                    <button class="filter-btn" onclick="applyFilter('answered', this)">Đã làm</button>
+                </div>
+                <div id="question-index" class="index-grid"></div>
+            </div>
+            <button class="btn btn-danger" onclick="goHome()">Thoát</button>
+        </aside>
+        <main class="main-content">
+            <div class="panel top-panel">
+                <div class="header">
+                    <h3 id="lesson-title">Tên bài học</h3>
+                </div>
+                <div class="mobile-tabs hidden-pc">
+                    <button id="tab-question" class="m-tab-btn active" onclick="switchMobileTab('question')">Câu hỏi</button>
+                    <button id="tab-index" class="m-tab-btn" onclick="switchMobileTab('index')">Mục lục</button>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar" id="quiz-progress"></div>
+                </div>
+            </div>
+            <div class="panel question-box">
+                <div class="question-header-row">
+                    <h4 id="question-text">Câu hỏi sẽ hiện ở đây?</h4>
+                    <div class="help-tooltip-container">
+                        <button class="btn-help">?</button>
+                        <div class="tooltip-content">
+                            <strong>⌨️ Phím tắt</strong>
+                            <ul>
+                                <li><b>A / ←</b> : Câu trước</li>
+                                <li><b>D / →</b> : Câu sau</li>
+                                <li><b>W / ↑</b> : Câu trên 1 hàng</li>
+                                <li><b>S / ↓</b> : Câu dưới 1 hàng</li>
+                                <li><b>1, 2, 3, 4</b> : Chọn A, B, C, D</li>
+                                <li><b>Q</b> : Về trang chủ</li>
+                                <li><b>R</b> : Làm lại câu sai</li>
+                                <li><b>F</b> : Gắn cờ / Bỏ cờ</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="options-container" class="options-group"></div>
+            </div>
+            <div class="panel navigation-buttons">
+                <button class="btn btn-warning" onclick="redoMistakes()">Làm lại các câu sai</button>
+                <div class="nav-right">
+                    <button class="btn btn-nav" onclick="prevQuestion()">
+                        <span class="text-pc">Câu trước</span>
+                        <span class="icon-mb hidden-pc">←</span>
+                    </button>
+                    <button id="mobile-flag-btn" class="btn btn-flag hidden-pc" onclick="toggleFlagCurrent()">Gắn cờ</button>
+                    <button class="btn btn-primary btn-nav" onclick="nextQuestion()">
+                        <span class="text-pc">Câu sau</span>
+                        <span class="icon-mb hidden-pc">→</span>
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div id="custom-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <h3>🎉 Tuyệt vời!</h3>
+            <p>Đỉnh quá bạn iu ơi, làm đúng sạch 100% rồi!</p>
+            <button class="btn btn-primary" onclick="closeModal()">OK lun</button>
+        </div>
+    </div>
+    <div id="confirm-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <h3 class="modal-title-warning">⚠️ Xác nhận</h3>
+            <p>Chắc chắn muốn xóa sạch kết quả để cày lại từ đầu không m?</p>
+            <div class="modal-button-group">
+                <button class="btn" onclick="closeConfirmModal()">Thôi</button>
+                <button class="btn btn-danger" onclick="handleConfirmReset()">Chốt</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
