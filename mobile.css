@@ -132,7 +132,7 @@
     .index-box {
         display: none;
         order: 1;
-        margin-top: -10px;
+        margin-top: 0;
         background: #fff;
         padding: 15px;
         border-radius: 8px;
@@ -150,6 +150,7 @@
 
     #quiz-screen.show-mobile-index .index-box {
         display: flex !important;
+        flex-direction: column !important;
     }
 
     .stats-box {
