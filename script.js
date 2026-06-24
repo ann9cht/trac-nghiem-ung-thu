@@ -12,8 +12,18 @@ const quizScreen = document.getElementById('quiz-screen');
 const lessonListEl = document.getElementById('lesson-list');
 const confirmModalEl = document.getElementById('confirm-modal');
 
+//function initHome() {
+//    lessonListEl.innerHTML = database.map((l, i) => `<button class="lesson-btn" onclick="startLesson(${i})">${l.title}</button>`).join('');
+//}
+
 function initHome() {
-    lessonListEl.innerHTML = database.map((l, i) => `<button class="lesson-btn" onclick="startLesson(${i})">${l.title}</button>`).join('');
+    lessonListEl.innerHTML = database.map((l, i) => {
+        const badgeHtml = l.badge ? `<span class="l-badge ${l.badgeType || ''}">${l.badge}</span>` : '';
+        return `<button class="lesson-btn" onclick="startLesson(${i})">
+                    <span class="l-title">${l.title}</span>
+                    ${badgeHtml}
+                </button>`;
+    }).join('');
 }
 
 function startLesson(index) {

@@ -117,6 +117,10 @@ body {
     cursor: pointer;
     font-size: 16px;
     transition: 0.2s;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .lesson-btn:hover {
@@ -692,4 +696,45 @@ input:checked + .slider:before {
 
 #flag-main-btn {
     padding: 8px 20px !important;
+}
+
+/* Cảnh báo đag up tiếp câu hỏi*/
+.update-badge {
+    display: block;
+    text-align: center;
+    margin-top: auto;
+    padding: 8px 12px;
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeeba;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    animation: pulseBadge 2s infinite;
+}
+
+@keyframes pulseBadge {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.05); opacity: 0.8; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.l-badge {
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.l-badge.done {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.l-badge.warn {
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeeba;
 }
