@@ -53,7 +53,7 @@ const database = [
             {
                 q: "Neoplasm là gì",
                 options: [
-                    "Thuật ngữ chỉ các khối u Ác tính",
+                    "Thuật ngữ chỉ các khối u ác tính",
                     "Là thuật ngữ tiếng Anh chuyên ngành về khối u bao gồm nghiên cứu sự phát sinh, phát triển, chẩn đoán, điều trị và dự phòng ung bướu",
                     "Thuật ngữ thể hiện ung thư là sự xâm lấn vào các tế bào",
                     "Là tên riêng"
@@ -209,7 +209,7 @@ const database = [
                 correctIndex: 3
             },
             {
-                q: "Tỷ lệ mắc ung thư nào sau đây cao hơn nữ giới",
+                q: "Tỷ lệ mắc ung thư nào sau đây nam giới cao hơn nữ giới",
                 options: [
                     "Ung thư tuyến giáp",
                     "Ung thư phổi",
@@ -269,7 +269,7 @@ const database = [
                 correctIndex: 0
             },
             {
-                q: "Dịch tễ học ung thu đề cập đến những vấn đề nào?",
+                q: "Dịch tễ học ung thư đề cập đến những vấn đề nào?",
                 options: [
                     "Tỷ lệ mới mắc",
                     "Tỷ lệ chữa khỏi",
@@ -802,7 +802,7 @@ const database = [
             {
                 q: "Hiện nay loại Ung thư chiếm tỉ lệ nhiều nhất nước ta là:",
                 options: [
-                    "Ung thu Gan",
+                    "ung thư Gan",
                     "Ung thư Phổi",
                     "Ung thư dạ dày",
                     "Ung thư đại tràng"
@@ -1420,7 +1420,7 @@ const database = [
                 correctIndex: 0
             },
             {
-                q: "Yếu tố quan trọng nhất xác định nguy cơ mắc ung thu",
+                q: "Yếu tố quan trọng nhất xác định nguy cơ mắc ung thư",
                 options: [
                     "Tuổi",
                     "Giới tính",
@@ -1481,7 +1481,350 @@ const database = [
                     "Tất cả tế bào đều sinh bệnh"
                 ],
                 correctIndex: 3
-            }
+            },
+            {
+                q: "Tế bào ung thư có những đặc tính nào sau đây, trừ:",
+                options: [
+                    "Tính di động của các tế bào ung thư",
+                    "Khối u phát triển chậm",
+                    "Khả năng tiêu đạm ở các cấu trúc nâng đỡ của mô và cơ quan",
+                    "Mất ức chế tiếp xúc của các tế bào"
+                ],
+                correctIndex: 1
+            },
+            {
+                q: "Giai đoạn thúc đẩy bao gồm đặc điểm nào, trừ:",
+                options: [
+                    "Sự thay đổi biểu hiện của gen",
+                    "Sự bành trướng đơn dòng có chọn lọc",
+                    "Sự xâm lấn",
+                    "Sự tăng sinh tế báo khởi phát"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Có mấy giai đoạn tiến triển",
+                options: [
+                    "6",
+                    "7",
+                    "8",
+                    "9"
+                ],
+               correctIndex: 0
+            },
+            {
+                q: "Giai đoạn lâm sàng chiếm bao nhiêu % thời gian tiến triển tự nhiên",
+                options: [
+                    "25",
+                    "35",
+                    "45",
+                    "55"
+                ],
+               correctIndex: 0
+            },
+            {
+                q: "Đặc điểm tế bào ung thư",
+                options: [
+                    "Phát triển chậm",
+                    "Có thể tự khỏi",
+                    "Tính xâm lấn",
+                    "Tính hoại tử"
+                ],
+               correctIndex: 2
+            },
+            {
+                q: "Con đường di căn của ung thư, trừ",
+                options: [
+                    "Mạch máu",
+                    "Bạch huyết",
+                    "Đường kế cận",
+                    "Đường tiếp xúc"
+                ],
+               correctIndex: 3
+            },
+            {
+                q: "Thứ tự thời gian quá trình tiến triển tự nhiên của ung thư trải qua 6 giai đoạn theo trình tự nào",
+                options: [
+                    "Khởi phát, tiển triển, tăng trưởng, lan tràn, thúc đẩy, chuyển biến",
+                    "Khởi phát, chuyển biến, tăng trưởng, lan tràn, thúc đẩy, tiến triển",
+                    "Khởi phát, tăng trưởng, thúc đẩy, chuyển biến, lan tràn, tiến triển",
+                    "Khởi phát, tăng trưởng, tiến triển, thúc đẩy, lan tràn, chuyển biến"
+                ],
+               correctIndex: 2
+            },
+            {
+                q: "Trong quá trình tiến triển tự nhiên của ung thư, giai đoạn đặc trưng bằng sự tăng lên về kích thước của khối u do tăng trưởng của nhóm tế bào ung thư cư trú ở một nơi nào đó là giai đoạn nào?",
+                options: [
+                    "Giai đoạn lan tràn",
+                    "Giai đoạn khởi phát",
+                    "Giai đoạn thúc đẩy",
+                    "Giai đoạn tiến triển"
+                ],
+               correctIndex: 3
+            },
+            {
+                q: "Đâu không phải là đặc điểm của giai đoạn thúc đẩy",
+                options: [
+                    "Bành trướng đơn dòng có chọn lọc",
+                    "Thay đổi biểu hiện gen",
+                    "Tăng sinh tế bào khởi phát",
+                    "Tiếp xúc với các chất sinh ung thư"
+                ],
+               correctIndex: 3
+            },
+            {
+                q: "Có bao nhiêu giai đoạn tiến triển ung thư",
+                options: [
+                    "4",
+                    "5",
+                    "6",
+                    "7"
+                ],
+               correctIndex: 2
+            },
+            {
+                q: "Giai đoạn tiến triển của ung thư, ngoại trừ",
+                options: [
+                    "Giai đoạn ủ bệnh",
+                    "Giai đoạn khởi phát",
+                    "Giai đoạn tăng trưởng",
+                    "Giai đoạn tiến triển"
+                ],
+               correctIndex: 0
+            },
+            {
+                q: "Về giai đoạn khởi phát, câu nào sau đây sai",
+                options: [
+                    "Diễn biến nhanh",
+                    "Có thể đảo ngược",
+                    "Chưa xác định được ngưỡng khởi phát ý",
+                    "A, C đúng"
+                ],
+               correctIndex: 1,
+               keepOrder: true
+            },
+            {
+                q: "Các con đường di căn của ung thư",
+                options: [
+                    "Đường máu",
+                    "Đường bạch huyết",
+                    "Đường kế cận",
+                    "Tất cả đều đúng"
+                ],
+               correctIndex: 3
+            },
+            {
+                q: "Quá trình xâm lấn của tế bào ung thư là nhờ",
+                options: [
+                    "Tính di động của tế bào ác tính",
+                    "Khả năng tiêu đạm ở cấu trúc nâng đỡ của mô và cơ quan",
+                    "Mất sự ức chế tiếp xúc của các tế bào",
+                    "Cả A,B,C đều đúng"
+                ],
+               correctIndex: 3
+            },
+            {
+                q: "Giai đoạn thứu 3 trong quá trình tiến triển tự nhiên của ung thư là",
+                options: [
+                    "Khởi phát",
+                    "Thúc đẩy",
+                    "Tăng trưởng",
+                    "Chuyển biến"
+                ],
+               correctIndex: 1
+            },
+            {
+                q: "Các giai đoạn tiến triển (xâm lấn di căn) đặc trưng bằng",
+                options: [
+                    "Sự tăng trưởng nhóm tế bào cư trú ở một mô nào đó đang bành trướng",
+                    "Sự tăng lên về kích thước của khối u do tăng trưởng của một nhóm tế bào ung thư cu trú ở một nơi nao đó",
+                    "Cho phép sự thâm nhập hay xuất hiện những ổ tế bào ung thư nhỏ",
+                    "Thay đổi biểu hiện gen"
+                ],
+               correctIndex: 1
+            },
+            {
+                q: "Vị trí hay di căn của ung thư",
+                options: [
+                    "Phổi",
+                    "Cơ",
+                    "Da",
+                    "Tuyến ức"
+                ],
+               correctIndex: 0
+            },
+            {
+                q: "Ung thư cơ quan nào hay di căn",
+                options: [
+                    "Cơ",
+                    "Da",
+                    "Phổi",
+                    "Lách"
+                ],
+               correctIndex: 2
+            },
+            {
+                q: "Di căn theo các đường nào, chọn ý sai",
+                options: [
+                    "Đường máu",
+                    "Đường bạch huyết",
+                    "Đường kế cận và mắc phải",
+                    "Đường ăn uống"
+                ],
+               correctIndex: 3
+            },
+            {
+                q: "Theo thứ tự thời gian quá trình tiến triển tự nhiên của ung thư trải qua bao nhiêu giai đoạn",
+                options: [
+                    "4 giai đoạn",
+                    "6 giai đoạn",
+                    "7 giai đoạn",
+                    "5 giai đoạn"
+                ],
+               correctIndex: 1
+            },
+            {
+                q: "Trong giai đoạn tiến triển, điều nào sau đây là đúng",
+                options: [
+                    "Các tế bào đột biến biểu hiện sự đáp ứng kém với môi trường và ưu thế tăng trưởng chọn lọc với tế bào bình thường và xung quanh",
+                    "Giai đoạn tăng trưởng hay bành trướng chọn lọc dòng tế bào khởi phát có thể tiếp theo quá trình khởi phát và được tạo điều kiện với thay đổi vật lý của vi môi trường bình thường",
+                    "Giai đoạn này biểu hiện đặc tính phục hồi kéo dài có thể trải qua nhiều bước và phụ thuộc vào ngưỡng của  tác nhân",
+                    "Giai đoạn này đặc trưng bởi sự tăng trưởng nhóm tế bào cư trú ở một mô nào đó bành trướng"
+                ],
+               correctIndex: 0
+            },
+            {
+                q: "Di căn theo các đường nào, chọn ý sai",
+                options: [
+                    "Đường máu",
+                    "Đường bạch huyết",
+                    "Đường kế cận và mắc phải",
+                    "Đường ăn uống"
+                ],
+               correctIndex: 3
+            },
+            {
+                q: "Giai đoạn 4 của quá trình tiến triển ung thư là",
+                options: [
+                    "GĐ tăng trưởng",
+                    "GĐ thúc đẩy",
+                    "GD lan tràn",
+                    "GĐ tiến triển"
+                ],
+               correctIndex: 2
+            },
+            {
+                q: "Tiến triển tự nhiên của ung thư có thể chia thành các giai đoạn chính là",
+                options: [
+                    "Giai đoạn tiền ung thư",
+                    "Giai đoạn tiền lâm sàng",
+                    "Giai đoạn tiền ung thư và tiền lâm sàng",
+                    "Giai đoạn lâm sàng",
+                    "Câu C, D đúng"
+                ],
+               correctIndex: 4,
+               keepOrder: true
+            },
+            {
+                q: "Đặc điểm của quá trình thúc đẩy gồm, ngoại trừ",
+                options: [
+                    "Thay đổi gen",
+                    "Kéo dài",
+                    "Tăng sinh tế bào",
+                    "Không quan sát được"
+                ],
+               correctIndex: 3
+            },
+            {
+                q: "Giai đoạn xâm lấn - di căn là giai đoạn nào",
+                options: [
+                    "Giai đoạn chuyển biến",
+                    "Giai đoạn lan tràn",
+                    "Giai đoạn tăng trưởng",
+                    "Giai đoạn tiến triển"
+                ],
+               correctIndex: 3
+            },
+            {
+                q: "Giai đoạn nào có thể phát hiện khối u trên lâm sàng",
+                options: [
+                    "Giai đoạn khởi phát",
+                    "Giai đoạn lan tràn",
+                    "Giai đoạn lan tràn, xâm lấn, di căn",
+                    "Giai đoạn tăng trưởng, thúc đẩy, chuyển biến"
+                ],
+               correctIndex: 2
+            },
+            {
+                q: "Đặc điểm nào sau đay không phải của giai đoạn khởi phát",
+                options: [
+                    "Thời gian kéo dài",
+                    "Mức độ tiếp xúc ở người rất khó tránh",
+                    "Quá trình đột biến",
+                    "Có tính tích tụ"
+                ],
+               correctIndex: 0
+            },
+            {
+                q: "Đặc điểm dịch tễ của ung thư vú, chọn đáp án đúng nhất",
+                options: [
+                    "Tỉ lệ mắc ung thư vú ở nam giới chiếm khoảng 2% tổng số bệnh nhân ung thư vú",
+                    "Tỉ lệ mắc ung thư vú ở nam giới chiếm khoảng 1% tổng số bệnh nhân ung thư vú",
+                    "Chưa ghi nhận bệnh nhân ung thư vú ở nam giới",
+                    "Bệnh nhân ung thư vú ở nam giới thường có mẹ hoặc chị em ruột bị ung thư vú"
+                ],
+               correctIndex: 1
+            },
+            {
+                q: "Đặc điểm dịch tễ của ung thư vú, chọn đáp án đúng nhất",
+                options: [
+                    "Tỉ lệ mắc tương đương ở các lứa tuổi",
+                    "Thường gặp ở tuổi trẻ hơn 40 tuổi",
+                    "Tỷ lệ mắc nhanh hơn ở bệnh nhân trên 40 tuổi",
+                    "Tỷ lệ mắc nhanh hơn ở bệnh nhân trên 50 tuổi"
+                ],
+               correctIndex: 0
+            },
+            {
+                q: "Ý nào sau đay không đúng về giai đoạn thúc đẩy của ung thư",
+                options: [
+                    "Biểu hiện đặc tính phục hồi kéo dài có thể trải qua nhiều bước",
+                    "Phụ thuộc vào ngưỡng của tác nhân",
+                    "Mức độ tiếp xúc của con người với những tác nhân đẩy là giống nhau",
+                    "Tất cả đáp án trên là đúng"
+                ],
+               correctIndex: 2
+            },
+            {
+                q: "Ý nào sau đây đúng về giai đoạn khởi phát của ung thư",
+                options: [
+                    "Giai đoạn khởi phát bắt đầu thường là từ tế bào gốc",
+                    "Diên biến rất nhanh",
+                    "Không thể đảo ngược được",
+                    "Tất cả ý trên đều là đúng"
+                ],
+               correctIndex: 3
+            },
+            {
+                q: "Giai đoạn tiền ung thư chiếm bao nhiêu thời gian bệnh",
+                options: [
+                    "25%",
+                    "50%",
+                    "75%",
+                    "90%"
+                ],
+               correctIndex: 2
+            },
+            {
+                q: "Giai đoạn lâm sàng chiếm bao nhiêu thời gian bệnh",
+                options: [
+                    "25%",
+                    "50%",
+                    "75%",
+                    "100%"
+                ],
+               correctIndex: 0
+            },
         ]
     },
     // =========================================================================
@@ -1639,7 +1982,7 @@ const database = [
                     "MyC",
                     "p53",
                     "Myl",
-                    "Cå A,B,C"
+                    "Cả A,B,C"
                 ],
                 correctIndex: 1
             },
@@ -1654,14 +1997,14 @@ const database = [
                 correctIndex: 2
             },
             {
-                q: "Các cơ chế thúc đẩy a, trừ:",
+                q: "Các cơ chế thúc đẩy u, trừ:",
                 options: [
                     "Đột biến các phân tử truyền tín hiệu",
-                    "hoạt hóa các gen gây chết tb theo chương trình",
+                    "Hoạt hóa các gen gây chết tb theo chương trình",
                     "Môi trường giàu O2",
                     "Môi trường giàu dinh dưỡng, năng lượng"
                 ],
-                correctIndex: 2
+                correctIndex: 1
             },
             {
                 q: "Cơ chế bệnh sinh ung thư gồm:",
@@ -1778,7 +2121,7 @@ const database = [
                 options: [
                     "Ung thư nguyên bào thần kinh",
                     "Bạch cầu kinh thể tủy",
-                    "Bạch cầu cấp lym phổ",
+                    "Bạch cầu cấp lympho",
                     "Ung thư buồng trứng"
                 ],
                 correctIndex: 0
@@ -1809,7 +2152,7 @@ const database = [
                     "Ung thư trực tràng",
                     "Ung thư phổi",
                     "Ung thư gan",
-                    "Không gây ung nhu"
+                    "Không gây ung thư"
                 ],
                 correctIndex: 0
             },
@@ -1861,7 +2204,8 @@ const database = [
                     "A,B đều đúng",
                     "A,B đều sai"
                 ],
-                correctIndex: 1
+                correctIndex: 1,
+                keepOrder: true
             },
             {
                 q: "Đúng nhất về cơ chế gen sinh ung thư:",
@@ -1944,14 +2288,14 @@ const database = [
                 correctIndex: 3
             },
             {
-                q: "Bệnh u Wilm do khuyết đoạn ở đoạn vị trí nào của gen HRAS",
+                q: "Bệnh u Wilm do khuyết đoạn ở đoạn vị trí nào của gen Hạ ras",
                 options: [
                     "11p",
                     "11q",
                     "22q",
-                    "22p"
+                    "23p"
                 ],
-                correctIndex: 3
+                correctIndex: 0
             },
             {
                 q: "U lympho Kurkitt do gen nào gây ra?",
@@ -2104,7 +2448,7 @@ const database = [
                 correctIndex: 3
             },
             {
-                q: "Chọn câu không phải là các nguyên nhân bên ngoài gây ung thu",
+                q: "Chọn câu không phải là các nguyên nhân bên ngoài gây ung thư",
                 options: [
                     "Hóa xạ trị ion",
                     "Thuốc lá",
@@ -2116,7 +2460,7 @@ const database = [
             {
                 q: "Ý nào không phải virus sinh ung thư ở người",
                 options: [
-                    "Virus hlty V 1",
+                    "Virus HTVL 1",
                     "Virus HIV",
                     "Virus viêm gan C",
                     "Virus EB"
@@ -2136,7 +2480,7 @@ const database = [
             {
                 q: "Gen Mcc gặp trong bệnh ung thư?",
                 options: [
-                    "Da polyp trực tràng",
+                    "Đa polyp trực tràng",
                     "Ung thư đại tràng",
                     "U Wilm",
                     "Bạch cầu kinh thể tủy"
@@ -2314,7 +2658,7 @@ const database = [
                 correctIndex: 0
             },
             {
-                q: "Cơ chế thúc đẩy sinh tồn của u TRỪ",
+                q: "Cơ chế thúc đẩy sinh tồn của u, TRỪ",
                 options: [
                     "Đột biến các phân tử dẫn truyền tín hiệu",
                     "Môi trường giàu oxy",
@@ -2331,7 +2675,8 @@ const database = [
                     "Cả A và B đều đúng",
                     "Cả A và B đều sai"
                 ],
-                correctIndex: 0
+                correctIndex: 0,
+                keepOrder: true
             },
             {
                 q: "Cơ chế tăng trưởng số lượng của các quần thể tế bào",
@@ -2341,7 +2686,8 @@ const database = [
                     "Giảm vận tốc tế bào chết đi",
                     "A và C đúng"
                 ],
-                correctIndex: 3
+                correctIndex: 3,
+                keepOrder: true
             },
             {
                 q: "Tác nhân gây ung thư phổi:",
@@ -2466,8 +2812,8 @@ const database = [
             {
                 q: "Chọn câu đúng:",
                 options: [
-                    "Oncogen là do các genome của virus bơm vào cơ thể người vì thấy các Oncogen nảy giống với ADN của virus.",
-                    "Oncogen là do các genome của vi khuẩn bơm vào cơ thể người vì thấy các Oncogen nảy giống với ADN của vi khuẩn.",
+                    "Oncogen là do các genome của virus bơm vào cơ thể người vì thấy các Oncogen này giống với ADN của virus.",
+                    "Oncogen là do các genome của vi khuẩn bơm vào cơ thể người vì thấy các Oncogen này giống với ADN của vi khuẩn.",
                     "Oncogen là do các genome của virus bơm vào cơ thể người vì thấy các Oncogen này giống với ARN của virus.",
                     "Oncogen là do các genome của virus bơm vào cơ thể người vì thấy các Oncogen này khác với ARN của vi khuẩn."
                 ],
@@ -2496,7 +2842,7 @@ const database = [
             {
                 q: "Gen ức chế khối u mã hóa cho những protein kiểm soát phân bào theo hướng ức chế, làm chu kì phân bào bị dừng ở pha nào:",
                 options: [
-                    "Pha Gl",
+                    "Pha G1",
                     "Pha S",
                     "Pha G2",
                     "Tất cả đều sai"
