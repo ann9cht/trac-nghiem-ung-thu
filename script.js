@@ -104,7 +104,24 @@ function selectAnswer(i) {
     renderAll();
     
     if (document.getElementById('toggle-auto-next').checked) {
-        autoNextTimeout = setTimeout(nextQuestion, 750);
+        autoNextTimeout = setTimeout(() => {
+            const currentPos = activeIndices.indexOf(currentQuestionIndex);
+            let targetIndex = currentQuestionIndex;
+
+            for (let j = 1; j < activeIndices.length; j++) {
+                let checkPos = (currentPos + j) % activeIndices.length;
+                let realIndex = activeIndices[checkPos];
+                if (!userAnswers.hasOwnProperty(realIndex)) {
+                    targetIndex = realIndex;
+                    break;
+                }
+            }
+
+            if (targetIndex !== currentQuestionIndex) {
+                currentQuestionIndex = targetIndex;
+                renderQuestion();
+            }
+        }, 750);
     }
 }
 
