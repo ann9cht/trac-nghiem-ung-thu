@@ -1471,6 +1471,16 @@ const database = [
                 q: "Quá trình tiến triển tự nhiên của ung thư trải qua bao nhiêu giai đoạn ?",
                 options: ["5", "6", "7", "8"],
                 correctIndex: 1
+            },
+            {
+                q: "Giai đoạn khởi phát của ung thư có các đặc điểm, ngoại trừ:",
+                options: [
+                    "Diễn ra rất nhanh",
+                    "Hoàn tất trong khoảng vài phần giây",
+                    "Không thể đảo ngược được",
+                    "Tất cả tế bào đều sinh bệnh"
+                ],
+                correctIndex: 3
             }
         ]
     },
