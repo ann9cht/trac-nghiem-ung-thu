@@ -19,12 +19,20 @@ function initHome() {
 function startLesson(index) {
     activeLessonIndex = index;
     const savedData = localStorage.getItem('quiz_lesson_' + index);
+    const currentDataString = JSON.stringify(database[index]);
     
     if (savedData) {
-        ({ lesson: activeLesson, answers: userAnswers, currentIndex: currentQuestionIndex, flags: flaggedIndices } = JSON.parse(savedData));
+        const parsed = JSON.parse(savedData);
+        
+        if (parsed.originalData !== currentDataString) {
+            localStorage.removeItem('quiz_lesson_' + index);
+            return startLesson(index);
+        }
+        
+        ({ lesson: activeLesson, answers: userAnswers, currentIndex: currentQuestionIndex, flags: flaggedIndices } = parsed);
         if (!flaggedIndices) flaggedIndices = [];
     } else {
-        activeLesson = JSON.parse(JSON.stringify(database[index]));
+        activeLesson = JSON.parse(currentDataString);
         
         if (document.getElementById('toggle-shuffle-q').checked) {
             shuffleArray(activeLesson.questions);
@@ -246,6 +254,7 @@ function handleConfirmReset() {
 function saveProgress() {
     if (activeLessonIndex !== null) {
         localStorage.setItem('quiz_lesson_' + activeLessonIndex, JSON.stringify({
+            originalData: JSON.stringify(database[activeLessonIndex]),
             lesson: activeLesson,
             answers: userAnswers,
             currentIndex: currentQuestionIndex,
