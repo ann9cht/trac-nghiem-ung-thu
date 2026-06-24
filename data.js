@@ -1471,9 +1471,40 @@ const database = [
                 q: "Quá trình tiến triển tự nhiên của ung thư trải qua bao nhiêu giai đoạn ?",
                 options: ["5", "6", "7", "8"],
                 correctIndex: 1
+            }
+        ]
+    },
+    // =========================================================================
+    //                       Bài 4. Nguyên nhân ung thư
+    // =========================================================================
+    {
+        title: "Bài 4. Nguyên nhân ung thư",
+        questions: [
+            {
+                q: "Thuốc lá là nguyên nhân hàng đầu gây ra bệnh ?",
+                options: [
+                    "Ung thư phế quản",
+                    "Ung thư tuyến giáp",
+                    "Ung thư đại tràng",
+                    "Ung thư gan"
+                ],
+                correctIndex: 0
+            }
+        ]
+    },
+    // =========================================================================
+    //                       Bài 5. Cơ chế sinh bệnh ung thư
+    // =========================================================================
+    {
+        title: "Bài 5. Cơ chế sinh bệnh ung thư",
+        questions: [
+            {
+                q: "Ung thư đại tràng do tổn thương gen nào ?",
+                options: ["p53", "p54", "p55", "p56"],
+                correctIndex: 0
             },
             {
-                q: "Các yếu tố kìm hãm khối u:",
+                q: "Khuyết đoạn tại vị trí 5q tại gen Mcc gây ra loại ung thư nào?",
                 options: [
                     "Ung thư đại tràng",
                     "U Wilm",
@@ -2531,37 +2562,6 @@ const database = [
                     "Ung thư biểu mô"
                 ],
                 correctIndex: 3
-            }
-        ]
-    },
-    // =========================================================================
-    //                       Bài 4. Nguyên nhân ung thư
-    // =========================================================================
-    {
-        title: "Bài 4. Nguyên nhân ung thư",
-        questions: [
-            {
-                q: "Thuốc lá là nguyên nhân hàng đầu gây ra bệnh ?",
-                options: [
-                    "Ung thư phế quản",
-                    "Ung thư tuyến giáp",
-                    "Ung thư đại tràng",
-                    "Ung thư gan"
-                ],
-                correctIndex: 0
-            }
-        ]
-    },
-    // =========================================================================
-    //                       Bài 5. Cơ chế sinh bệnh ung thư
-    // =========================================================================
-    {
-        title: "Bài 5. Cơ chế sinh bệnh ung thư",
-        questions: [
-            {
-                q: "Ung thư đại tràng do tổn thương gen nào ?",
-                options: ["p53", "p54", "p55", "p56"],
-                correctIndex: 0
             }
         ]
     },
