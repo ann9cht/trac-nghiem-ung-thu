@@ -1470,8 +1470,8 @@ const database = [
     // =========================================================================
     {
         title: "Bài 3. Quá trình tiến triển tự nhiên của ung thư",
-        badge: "🚧 Mới được 1/3",
-        badgeType: "warn",
+        badge: "✔️ Hoàn thành",
+        badgeType: "done",
         questions: [
             {
                 q: "Quá trình tiến triển tự nhiên của ung thư trải qua bao nhiêu giai đoạn ?",
@@ -2000,6 +2000,914 @@ const database = [
                     "90"
                 ],
                 correctIndex: 0
+            },
+                        {
+                q: "Đâu là thứ tự quá trình tiến triển tự nhiên của ung thư:",
+                options: [
+                    "Khởi phát - tăng trưởng - thúc đẩy - chuyển biến - lan tràn - tiến triển",
+                    "Khởi phát - thúc đẩy - tăng trưởng - chuyển biến - lan tràn - tiến triển",
+                    "Khởi phát - tăng trưởng - thúc đẩy - chuyển biến - di căn - tiến triển",
+                    "Khởi phát - tăng trưởng - thúc đẩy - chuyển biến - di căn - chết mòn"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Các co quan ít bị di căn là:",
+                options: [
+                    "Cơ, da, tuyến ức, não",
+                    "Cơ, da, tuyến ức, phổi",
+                    "Cơ, da, tuyến ức, xương",
+                    "Cơ, da, tuyến ức, lách"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Đặc điểm của giai đoạn thúc đẩy là",
+                options: [
+                    "Có khả năng hồi phục",
+                    "Không hồi phục",
+                    "Có khả năng tích tụ",
+                    "Không quan sát được"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Các cơ quan hay di căn K, ngoại trừ:",
+                options: [
+                    "Phổi",
+                    "Gan",
+                    "Lách",
+                    "Não"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Sự lan rộng tại chỗ của u có thể bị giới hạn bởi :",
+                options: [
+                    "Xương",
+                    "Sụn",
+                    "Thanh mạc",
+                    "Tất cả đáp án trên"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Giai đoạn thúc đẩy bao gồm:",
+                options: [
+                    "Sự thay đổi biểu hiện gen",
+                    "Sự bành trướng đơn dòng có chọn lọc",
+                    "Sự tăng sinh tế bào khởi phát",
+                    "Tất cả đáp án trên"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Chọn câu sai: Tế bào ung thư di căn theo đường máu:",
+                options: [
+                    "Tế bào di căn kết thúc tại mao mạch và tăng trưởng",
+                    "Số lượng tế bào di căn tỉ lệ nghịch với kích thước của khối u",
+                    "Tế bào ung thư lan tràn vào hệ thống bạch mạch tại chỗ",
+                    "Thưởng di căn từ gần đến xa"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Chọn đáp án sai",
+                options: [
+                    "Ung thư phát triển từ 1 tế bào",
+                    "Ung thư là bệnh lý cấp tính",
+                    "Thời gian của giai đoạn khởi phát diễn ra rất nhanh",
+                    "Thời gian của giai đoạn thúc đẩy thường được kéo dài"
+                ],
+                correctIndex: 1
+            },
+            {
+                q: "Đường di căn hay gặp nhất của Ung thư liên kết",
+                options: [
+                    "Theo đường máu",
+                    "Theo đường bạch huyết",
+                    "Theo đường kế cận",
+                    "Dao mổ, đường kế cận"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Giai đoạn thứ 4 trong quá trình phát triển tự nhiên của ung thư là ?",
+                options: [
+                    "Tăng trường",
+                    "Thúc đẩy",
+                    "Lan toàn",
+                    "Chuyển biến"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Giai đoạn thứ 2 trong quá trình phát triển tự nhiên của ung thư là",
+                options: [
+                    "Khởi phát",
+                    "Thúc đẩy",
+                    "Tăng trưởng",
+                    "Chuyển biến"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Tiến triển của ung thư có mấy giai đoạn",
+                options: [
+                    "6",
+                    "5",
+                    "4",
+                    "3"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Giai đoạn tiền ung thư và tiền lâm sàng chiếm .....",
+                options: [
+                    "75% thời gian",
+                    "57% thời gian",
+                    "25% thời gian",
+                    "52% thời gian"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Có bao nhiêu giai đoạn tiến triển của ung thư:",
+                options: [
+                    "2",
+                    "3",
+                    "4",
+                    "6"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Giai đoạn tiến triển nào bắt đầu từ tế bào gốc:",
+                options: [
+                    "Giai đoạn khởi phát",
+                    "Giai đoạn tăng trưởng",
+                    "Giai đoạn thúc đẩy",
+                    "Giai đoạn chuyển biến"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Quá trình tiến triển tự nhiên của ung thư trải qua mấy giai đoạn:",
+                options: [
+                    "5",
+                    "6",
+                    "7",
+                    "4"
+                ],
+                correctIndex: 1
+            },
+            {
+                q: "Hút thuốc lá là nguyên nhân gây ra các loại ung thư chiếm tỷ lệ bao nhiêu",
+                options: [
+                    "20%",
+                    "25%",
+                    "30%",
+                    "35%"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Phục hồi chức năng cho bệnh nhân ung thư nhằm cải thiện kết quả điều trị",
+                options: [
+                    "Phỏng bệnh bước 1",
+                    "Phòng bệnh bước 2",
+                    "Phòng bệnh bước 3",
+                    "Phối hợp cả 3 phương pháp"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Đặc điểm “ không thể đảo ngược được” thuộc giai đoạn:",
+                options: [
+                    "Khởi phát",
+                    "Tăng trưởng",
+                    "Thúc đẩy",
+                    "Chuyển biến"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Ung thư cơ quan nào hay di căn",
+                options: [
+                    "Cơ",
+                    "Da",
+                    "Phổi",
+                    "Lách"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Giai đoạn tiền ung thư và giai đoạn tiền lâm sàng chiếm bao nhiêu thời gian bệnh",
+                options: [
+                    "Chiếm đa số thời gian bệnh",
+                    "Chiếm 50%",
+                    "Chiếm 75% tuỳ thuộc loại ung thư",
+                    "Chiến 75%"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Phân loại giai đoạn theo TNM có giá trị, trừ",
+                options: [
+                    "Lập kế hoạch điều trị",
+                    "Đánh giá kết quả điều trị",
+                    "Không giúp tiên lượng bệnh"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Phân loại giai đoạn theo TNM có giá trị",
+                options: [
+                    "Lập kế hoạch điều trị",
+                    "Đánh giá kết quả điều trị",
+                    "Tất cả các đáp án trên"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Theo thứ tự thời gian quá trình tiến triển tự nhiên của ung thư trải qua mấy giai đoạn:",
+                options: [
+                    "5",
+                    "4",
+                    "6",
+                    "3"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Cơ quan hay di căn, trừ:",
+                options: [
+                    "Phổi",
+                    "Gan",
+                    "Não",
+                    "Tuyến ức"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Sự tiến triển tự nhiên theo thời gian của Ung thư 2 giai đoạn chính",
+                options: [
+                    "Giai đoạn tiền Ung thư chiếm 75% và giai đoạn tiền lâm sàng chiếm 25%",
+                    "Giai đoạn tiền Ung thư chiếm 25% và giai đoạn tiền lâm sàng chiếm 75%",
+                    "Giai đoạn tiền Ung thư chiếm 75 % và giai đoạn lâm sàng chiếm 25 %",
+                    "Giai đoạn tiền Ung thư Tiền lâm sàng chiếm 25% và giai đoạn lâm sàng chiếm 75%"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Giai đoạn tăng trưởng là",
+                options: [
+                    "là giai đoạn bắt đầu thường là từ tế bào gốc, do tiếp xúc với chất sinh ung thư gây những đột biến",
+                    "là giai đoạn bành trướng chọn lọc dòng tế bào khởi phát có thể tiếp theo quá trình khởi phát",
+                    "là giai đoạn bao gồm sự thay đổi biểu hiện gen, sự bành trướng đơn dòng có chọn lọc",
+                    "là giai đoạn đặc trưng bởi sự tăng trưởng nhóm tế bào cư trú ở một mô nào đó đang bành trướng"
+                ],
+                correctIndex: 1
+            },
+            {
+                q: "Ở giai đoạn phát triển được đặc biệt bởi",
+                options: [
+                    "Tạm nghỉ phân chia của tế bào",
+                    "Tăng kích thước của u",
+                    "Các tế bào được nuôi dưỡng phát triển nhanh chóng",
+                    "Các tế bào không cần mạch nuôi dưỡng"
+                ],
+                correctIndex: 1
+            },
+            {
+                q: "Điền từ vào chỗ trống: “Giai đoạn lâm sàng, trên lâm sàng chỉ phát hiện khí khối u có kích thước trên ... cm3 (khoảng 1 tỷ tế bảo), cần phải có ... nhân đôi",
+                options: [
+                    "1 và 32",
+                    "10 và 30",
+                    "1 và 30",
+                    "10 và 32"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Di căn theo các đường nào, chọn ý sai?",
+                options: [
+                    "Đường máu",
+                    "Đường bạch huyết",
+                    "Đường kế cận và mắc phải",
+                    "Đường ăn uống"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Giai đoạn 4 của quá trình tiến triển ung thư là:",
+                options: [
+                    "GĐ tăng trưởng",
+                    "GĐ thúc đẩy",
+                    "GĐ lan tràn",
+                    "GĐ tiến triển"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Các giai đoạn phát triển bệnh ung thư :",
+                options: [
+                    "Giai đoạn khởi phát",
+                    "Giai đoạn tăng trưởng, thúc đẩy, chuyển biến",
+                    "Giai đoạn di căn",
+                    "Tất cả đáp án trên"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Giai đoạn nào? Các khối u xâm lấn đến các cơ quan khác trong cơ thể, phá huỷ các cơ quan này",
+                options: [
+                    "Giai đoạn khởi phát",
+                    "Giai đoạn tăng trưởng, thúc đẩy, chuyển biển",
+                    "Giai đoạn di căn",
+                    "Giai đoạn tiến triển"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Ung thư phát triển qua mấy giai đoạn:",
+                options: [
+                    "4",
+                    "5",
+                    "6",
+                    "7"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Giai đoạn nào thì ung thư có thể xâm lấn:",
+                options: [
+                    "tiến triển",
+                    "biển chuyển",
+                    "lan tràn",
+                    "tăng trưởng"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Tác nhân gây ung thư phổi:",
+                options: [
+                    "EBV",
+                    "Mỡ động vật",
+                    "Phẩm nhuộm",
+                    "Amiăng"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Tác động của tia phóng xạ gây ung thư ở người phụ thuộc vào:",
+                options: [
+                    "Tuổi thanh thiếu niên dễ bị ảnh hưởng hơn tuổi nhũ nhi do có tốc độ tăng trưởng nhanh hơn",
+                    "Tất cả các cơ quan trọng cơ thể đều nhạy cảm với tia xạ",
+                    "Mối liên hệ liều - đáp ứng",
+                    "Nguồn xạ gây ung thư ở người chỉ có nguồn xạ nhân tạo"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Tiến triển tự nhiên của ung thư chia thành",
+                options: [
+                    "2 giai đoạn: tiền ung thư và tiền lâm sàng",
+                    "2 giai đoạn: tiền ung thư và ung thư",
+                    "3 giai đoạn: tiền ung thư, tiền lâm sàng, ung thư",
+                    "3 giai đoạn: tiền lâm sàng, ung thư, cận lâm sàng ung thư"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Thứ tự thời gian quá trình tiến triển tự nhiên của ung thư trải qua",
+                options: [
+                    "4 giai đoạn",
+                    "5 giai đoạn",
+                    "6 giai đoạn",
+                    "7 giai đoạn",
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Đâu là đặc điểm của giai đoạn khởi phát",
+                options: [
+                    "Thay đổi gen",
+                    "Khả năng hồi phục",
+                    "Thời gian ngắn",
+                    "Không tích tụ",
+                ],
+                correctIndex: 2
+            },{
+                q: "Thứ tự thời gian quá trình tiến triển tự nhiên của ung thư trải qua",
+                options: [
+                    "Vật lý",
+                    "Hóa học",
+                    "Sinh học",
+                    "Tất cả"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Giai đoạn lâm sàng chiếm bao nhiêu % thời gian tiến triển tự nhiên",
+                options: [
+                    "30%",
+                    "25%",
+                    "35%",
+                    "20%"
+                ],
+                correctIndex: 1
+            },
+            {
+                q: "Sinh ra ung thư ở giai đoạn nào?",
+                options: [
+                    "Giai đoạn khởi phát",
+                    "Giai đoạn tăng trưởng",
+                    "Giai đoạn thúc đẩy",
+                    "A và C"
+                ],
+                correctIndex: 3,
+                keepOrder: true
+            },
+            {
+                q: "có mấy giai đoạn tiến triển",
+                options: [
+                    "6",
+                    "7",
+                    "8",
+                    "9"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "giai đoạn lâm sàng chiếm bao nhiêu % thời gian tiến triển tự nhiên",
+                options: [
+                    "25",
+                    "35",
+                    "45",
+                    "55"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Tiến trình tiến triển của ung thư trải qua mấy giai đoạn",
+                options: [
+                    "5",
+                    "6",
+                    "4",
+                    "2"
+                ],
+                correctIndex: 1
+            },
+            {
+                q: "Quá trình sinh bệnh ung thư liên quan chặt chẽ đến tổn thương 2 nhóm gen:",
+                options: [
+                    "Gen sửa chữa và gen ức chế khối u",
+                    "Gen sinh ung thư và gen sửa chữa",
+                    "Gen sinh ung thư và gen ức chế khối u",
+                    "Gen sửa chữa và gen ức chế khối u"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Có bao nhiêu giai đoạn tiến triển ung thư theo giai đoạn",
+                options: [
+                    "4",
+                    "5",
+                    "6",
+                    "7"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Giai đoạn thứ 5 của quá trình tự nhiên của ung thư là:",
+                options: [
+                    "Giai đoạn khởi phát",
+                    "Giai đoạn chuyển biến",
+                    "Giai đoạn tiến triển",
+                    "Giai đoạn lan trên"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Tỷ lệ mắc bệnh toàn bộ dùng để:",
+                options: [
+                    "Đánh giá gánh nặng về bệnh tật của cộng đồng",
+                    "Tính khoảng thời gian trung bình mà bệnh kéo dài",
+                    "Số lượng người tử vong",
+                    "Tỉ lệ mắc mới"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Dịch tễ học bao gồm:",
+                options: [
+                    "Dịch tễ học mô tả",
+                    "Dịch tễ học phân tích",
+                    "Dịch tễ học quan sát",
+                    "A và B"
+                ],
+                correctIndex: 3,
+                keepOrder: true
+            },
+            {
+                q: "Quá trình xâm lấn là nhờ tế bào ung thư có những đặc tính, trừ:",
+                options: [
+                    "Tính di động của tế bào ác tính",
+                    "Tính kết dính của tế bào ác tính với mô và cơ quan",
+                    "Khả năng tiêu đạm ở cấu trúc nâng đỡ của mô và cơ quan",
+                    "Mất sự ức chế tiếp xúc của các tế bào."
+                ],
+                correctIndex: 1
+            },
+            {
+                q: "Ung thư biểu mô hay di căn nhất theo con đường:",
+                options: [
+                    "Đường lân cận",
+                    "Đường máu",
+                    "Đường bạch huyết",
+                    "Mắc phải"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Tế bào ung thư có những đặc tính nào sau đây, trừ:",
+                options: [
+                    "Tính di động của các tế bào ác tính",
+                    "Khối u phát triển chậm",
+                    "Khả năng tiêu đạm ở các cấu trúc nâng đỡ của mô và cơ quan",
+                    "Mất ức chế tiếp xúc của các tế bào"
+                ],
+                correctIndex: 1
+            },
+            {
+                q: "Giai đoạn thúc đẩy bao gồm đặc điểm nào, trời",
+                options: [
+                    "Sự thay đổi biểu hiện gen",
+                    "Sự hành trưởng đơn dòng có chọn lọc",
+                    "Sự xâm lấn",
+                    "Sự tăng sinh tế bào khởi phát"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Chọn đáp án đúng nhất giai đoạn phát triển của bệnh ung thư gồm",
+                options: [
+                    "Khởi phát và xâm lấn di căn",
+                    "Tăng trưởng và thúc đẩy",
+                    "Chuyển biển và lan tràn",
+                    "Tất cả các đáp án trên"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Đặc điểm của giai đoạn khởi phát ung thư:",
+                options: [
+                    "Sự bành trưởng đơn dòng có chọn lọc",
+                    "Sự tăng trưởng nhóm tế bào cư trú ở một mô nào đó đang bành trướng",
+                    "Di động của các tế bào ác tinh",
+                    "Từ tế bào gốc tiếp xúc với chất ung thư gây ra những đột biến làm thay đổi không hồi phục của nhân tế bào"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Quá trình khởi phát của tế bào ung thư có đặc điểm nào?",
+                options: [
+                    "Bắt đầu bằng quá trình thay đổi gen",
+                    "Thời gian kéo dài",
+                    "Không thể hồi phục",
+                    "Quan sát được đại thể"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Ung thư biểu mô hay di căn nhất theo con đường nào?",
+                options: [
+                    "Đường lân cận",
+                    "Đường máu",
+                    "Đường bạch huyết",
+                    "Mắc phải"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Cơ quan hay đi căn nhất của Ung thư",
+                options: [
+                    "Gan",
+                    "Cơ",
+                    "Phổi",
+                    "Lách"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Sau khi tế bào bị khởi phát thành tế bào ung thư, các tế bào sẽ (chọn câu sai)",
+                options: [
+                    "Tăng sinh các dòng TB bị khởi phát",
+                    "Tạm nghỉ sau đó sẽ phát triển lan tràn",
+                    "Xâm nhập vào mô",
+                    "Hình thành các ổ nhỏ TB ung thư"
+                ],
+                correctIndex: 1
+            },
+            {
+                q: "Vị trí ung thư ít di căn là:",
+                options: [
+                    "xương",
+                    "lách",
+                    "não",
+                    "gan"
+                ],
+                correctIndex: 1
+            },
+            {
+                q: "Ung thư biểu mô hay di căn nhất theo con đường nào?",
+                options: [
+                    "Đường lân cận",
+                    "Mắc phải",
+                    "Đường máu",
+                    "Đường bạch huyết"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Các giai đoạn phát triển tự nhiên của bệnh ung thư gồm, trừ:",
+                options: [
+                    "Khởi phát",
+                    "Thúc đẩy",
+                    "Tăng trưởng",
+                    "Biệt hóa"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Những con đường di căn của bệnh ung thư",
+                options: [
+                    "Đường bạch huyết",
+                    "Đường máu",
+                    "Đường kể cận và mắc phải",
+                    "Tất cả đều đúng"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Quá trình xâm lấn tế bào ung thư có đặc tính . Đáp án sai",
+                options: [
+                    "Tỉnh đi động tb ác tính",
+                    "Khả năng tiêu đạm ở cấu trúc nâng đỡ của mô và cơ",
+                    "Mất sự ức chế tiếp xúc của các tế bào",
+                    "Di căn tế bào"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Cơ quan ít đi căn: cơ, da, tuyến ức, lách?",
+                options: [
+                    "Đúng",
+                    "Sai"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Cơ quan hay di căn nhất là",
+                options: [
+                    "Phổi, tủy, xương",
+                    "Phổi, gan, não, xương",
+                    "Gan, tuyến tiền liệt, phổi",
+                    "Tuyến tiền liệt, gan, não"
+                ],
+                correctIndex: 1
+            },
+            {
+                q: "Cơ quan ít di căn nhất là",
+                options: [
+                    "Phổi, gan, não, xương",
+                    "Gan, não, xương",
+                    "Cơ, da, tuyến ức, lách",
+                    "Cơ, da, phổi"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Giai đoạn nào được gọi là giai đoạn bành trướng ?",
+                options: [
+                    "Khởi phát",
+                    "Tiến triển",
+                    "Thúc đẩy",
+                    "Tăng trưởng"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Cơ quan ít đi căn là:",
+                options: [
+                    "Lách",
+                    "Phổi",
+                    "Não",
+                    "Gan"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Trong giai đoạn lan tràn của ung thư tế bào tăng sinh:",
+                options: [
+                    "Từ 1000 -1.000.000 tế bào",
+                    "Từ 2000 -1.000.000 tế bào",
+                    "Từ 3000 -1.000.000 tế bào",
+                    "Từ 4000 -1.000.000 tế bào"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Cơ quan hay di căn là:",
+                options: [
+                    "Phổi",
+                    "Cơ",
+                    "Da",
+                    "Lách"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Ung thư có bao nhiêu giai đoạn phát triển",
+                options: [
+                    "7 giai đoạn",
+                    "6 giai đoạn",
+                    "5 giai đoạn",
+                    "4 giai đoạn"
+                ],
+                correctIndex: 1
+            },
+            {
+                q: "Các giai đoạn phát triển của ung thư. Chọn đáp án sai",
+                options: [
+                    "Giai đoạn tăng trưởng",
+                    "Giai đoạn tăng kích thước",
+                    "Giai đoạn lan tràn",
+                    "Giai đoạn chuyển biến"
+                ],
+                correctIndex: 1
+            },
+            {
+                q: "Vị trí ung thư ít di căn là:",
+                options: [
+                    "phổi",
+                    "gan",
+                    "não",
+                    "lách"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Giai đoạn thúc đẩy gồm:",
+                options: [
+                    "sự thay đổi biểu hiện gen",
+                    "sự bành trưởng đơn dòng có chọn lọc",
+                    "sự tăng sinh tế bào khởi phát",
+                    "cả 3 đáp án trên"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Quá trình tiến triển tự nhiên của ung thư trải qua mấy giai đoạn:",
+                options: [
+                    "5",
+                    "6",
+                    "7",
+                    "4"
+                ],
+                correctIndex: 1
+            },
+            {
+                q: "Giai đoạn ung thư lâm sàng ?",
+                options: [
+                    "Chiếm 25% thời gian tiến triển tự nhiên với sự xuất hiện các triệu chứng lâm sàng",
+                    "Chiếm 75% thời gian tiến triển tự nhiên với sự xuất hiện các triệu chứng lâm sàng",
+                    "Chiếm 25% thời gian bệnh sử tự nhiên với 30 lần nhân đôi tế bào đạt số lượng 10^9 tế bào",
+                    "Chiếm 75% thời gian bệnh sử tự nhiên với 30 lần nhân đôi tế bào đạt số lượng 10^9 tế bào"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "loại ung thư nào dưới đây không liên quan đến ăn uống:",
+                options: [
+                    "ung thư đại tràng",
+                    "ung thư vú",
+                    "bệnh bạch cầu",
+                    "ung thư khoang miệng"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Nitrosamin là một chất gây ung thư thực nghiệm, thường được thấy trong loại thức ăn sau:",
+                options: [
+                    "Thịt nướng",
+                    "Mỡ động vật",
+                    "Cả muối",
+                    "Lạc mốc"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Cơ quan hay di căn, ngoại trừ:",
+                options: [
+                    "Phổi",
+                    "Não",
+                    "Gan",
+                    "Lách"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Ung thư di căn theo con đường:",
+                options: [
+                    "Đường máu",
+                    "Đường bạch huyết",
+                    "Đường kế cận và mắc phải",
+                    "Cả 3 con đường trên"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "có mấy giai đoạn tiến triển",
+                options: [
+                    "6",
+                    "7",
+                    "8",
+                    "9"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "giai đoạn lâm sàng chiếm bao nhiêu % thời gian tiến triển tự nhiên",
+                options: [
+                    "25",
+                    "35",
+                    "45",
+                    "55"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Đâu không phải là đặc điểm của giai đoạn thúc đẩy:",
+                options: [
+                    "Bành trướng đơn dòng có chọn lọc",
+                    "Thay đổi biểu hiện gen",
+                    "Tăng sinh tế bào khởi phát",
+                    "Tiếp xúc với chất sinh ung thư"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Giai đoạn khởi phát ung thư, câu nào sau đây sai",
+                options: [
+                    "Diễn biến nhanh",
+                    "Có thể đảo ngược",
+                    "Chưa xác định được ngưỡng khởi phát ý",
+                    "A, C đúng"
+                ],
+                correctIndex: 1,
+                keepOrder: true
+            },
+            {
+                q: "Cơ chế bệnh sinh của ung thư liên quan đến ?",
+                options: [
+                    "Cấu trúc phân tử của tế bào",
+                    "Chức năng của bảo quan trong tế bào",
+                    "Đột biến số lượng nhiễm sắc thể",
+                    "Đột biến cấu trúc nhiễm sắc thể"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Cơ quan ít di căn ?",
+                options: [
+                    "Cơ",
+                    "Não",
+                    "Gan",
+                    "Xương"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Ung thư phát triển qua mấy giai đoạn:",
+                options: [
+                    "3",
+                    "4",
+                    "5",
+                    "6"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Giai đoạn lan tràn thường diễn ra trong thời gian",
+                options: [
+                    "Chỉ vài ngày",
+                    "Vài tháng",
+                    "Vài năm",
+                    "Có thể vài tháng hoặc vài năm"
+                ],
+                correctIndex: 3
             }
         ]
     },
@@ -2008,6 +2916,8 @@ const database = [
     // =========================================================================
     {
         title: "Bài 4. Nguyên nhân ung thư",
+        badge: "🚧 Đang up",
+        badgeType: "warn",
         questions: [
             {
                 q: "Thuốc lá là nguyên nhân hàng đầu gây ra bệnh ?",
@@ -3104,6 +4014,8 @@ const database = [
     // =========================================================================
     {
         title: "Bài 6. Dự phòng ung thư",
+        badge: "🚧 Đang up",
+        badgeType: "warn",
         questions: [
             {
                 q: "Dự phòng ung thư bao gồm mấy bước ?",
@@ -3117,6 +4029,8 @@ const database = [
     // =========================================================================
     {
         title: "Bài 7. Chẩn đoán bệnh ung thư",
+        badge: "🚧 Đang up",
+        badgeType: "warn",
         questions: [
             {
                 q: "Triệu chứng báo hiệu ung thư là ?",
@@ -3135,6 +4049,8 @@ const database = [
     // =========================================================================
     {
         title: "Bài 8. Nguyên tắc điều trị bệnh ung thư",
+        badge: "🚧 Đang up",
+        badgeType: "warn",
         questions: [
             {
                 q: "Trong 2 năm đầu bệnh nhân thường được khám lại theo chu kỳ nào sau đây:",
@@ -3148,6 +4064,8 @@ const database = [
     // =========================================================================
     {
         title: "Bài 9. Điều trị phẫu thuật bệnh ung thư",
+        badge: "🚧 Đang up",
+        badgeType: "warn",
         questions: [
             {
                 q: "Nguyên tắc phẫu thuật ung thư bao gồm:",
@@ -3166,6 +4084,8 @@ const database = [
     // =========================================================================
     {
         title: "Bài 10. Xạ trị bệnh ung thư",
+        badge: "🚧 Đang up",
+        badgeType: "warn",
         questions: [
             {
                 q: "Các yếu tố ảnh hưởng tác động của tia phóng xạ, TRỪ:",
@@ -3184,6 +4104,8 @@ const database = [
     // =========================================================================
     {
         title: "Bài 11. Các phương pháp điều trị toàn thân",
+        badge: "🚧 Đang up",
+        badgeType: "warn",
         questions: [
             {
                 q: "Biến chứng gây nguy cơ tử vong trong điều trị hóa chất liều cao là:",
@@ -3197,6 +4119,8 @@ const database = [
     // =========================================================================
     {
         title: "Bài 12. Điều trị đau do ung thư",
+        badge: "🚧 Đang up",
+        badgeType: "warn",
         questions: [
             {
                 q: "Ý nào sau đây là đúng:",
