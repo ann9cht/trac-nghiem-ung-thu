@@ -4,7 +4,7 @@ const database = [
     // =========================================================================
     {
         title: "Bài 1. Khái niệm cơ bản về bệnh ung thư",
-        badge: "✔️ Hoàn thành",
+        badge: "✔️ Up xong",
         badgeType: "done",
         questions: [
             {
@@ -179,7 +179,7 @@ const database = [
     // =========================================================================
     {
         title: "Bài 2. Dịch tễ học mô tả bệnh ung thư",
-        badge: "✔️ Hoàn thành",
+        badge: "✔️ Up xong",
         badgeType: "done",
         questions: [
             {
@@ -1470,7 +1470,7 @@ const database = [
     // =========================================================================
     {
         title: "Bài 3. Quá trình tiến triển tự nhiên của ung thư",
-        badge: "✔️ Hoàn thành",
+        badge: "✔️ Up xong",
         badgeType: "done",
         questions: [
             {
@@ -2916,7 +2916,7 @@ const database = [
     // =========================================================================
     {
         title: "Bài 4. Nguyên nhân ung thư",
-        badge: "✔️ Hoàn thành",
+        badge: "✔️ Up xong",
         badgeType: "done",
         questions: [
             {
@@ -4460,7 +4460,7 @@ const database = [
     // =========================================================================
     {
         title: "Bài 5. Cơ chế sinh bệnh ung thư",
-        badge: "✔️ Hoàn thành",
+        badge: "✔️ Up xong",
         badgeType: "done",
         questions: [
             {
