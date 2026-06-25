@@ -5545,6 +5545,26 @@ const database = [
                 q: "Dự phòng ung thư bao gồm mấy bước ?",
                 options: ["2", "3", "4", "5"],
                 correctIndex: 1
+            },
+            {
+                q: "Dự phòng bước 1 là gì?",
+                options: [
+                    "Là loại trừ hoặc giảm tối đa sự tiếp xúc với các chất gây bệnh",
+                    "Là sàng lọc và phát hiện sớm các dấu hiệu của bệnh",
+                    "Là tìm biện pháp điều trị bệnh",
+                    "Tất cả đều sai"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Trong dự phòng bệnh ung thư",
+                options: [
+                    "Bước 1, 2 quan trọng nhất",
+                    "Bước 2, 3 quan trọng nhất",
+                    "Bước 1, 3 quan trọng nhất",
+                    "Không có bước nào quan trọng"
+                ],
+                correctIndex: 0
             }
         ]
     },
