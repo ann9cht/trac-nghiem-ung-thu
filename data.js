@@ -2916,8 +2916,8 @@ const database = [
     // =========================================================================
     {
         title: "Bài 4. Nguyên nhân ung thư",
-        badge: "🚧 Đang up",
-        badgeType: "warn",
+        badge: "✔️ Hoàn thành",
+        badgeType: "done",
         questions: [
             {
                 q: "Thuốc lá là nguyên nhân hàng đầu gây ra bệnh ?",
@@ -2928,6 +2928,1530 @@ const database = [
                     "Ung thư gan"
                 ],
                 correctIndex: 0
+            },
+                        {
+                q: "Người hút thuốc lá có nguy cơ mắc ung thư phế quản gấp mấy lần người không hút?",
+                options: [
+                    "10",
+                    "20",
+                    "30",
+                    "40"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Tìm ra đâu không phải là nguyên nhân bên trong gây ung thư",
+                options: [
+                    "Di truyền",
+                    "Nội tiết",
+                    "Virus",
+                    "Suy giảm miễn dịch"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "ung thư nào sau đây không liên quan đến yếu tố nội tiết",
+                options: [
+                    "Ung thư vú",
+                    "Ung thư gan",
+                    "Ung thư nội mạc tử cung",
+                    "Ung thư tuyến tiền liệt"
+                ],
+                correctIndex: 1
+            },
+            {
+                q: "Các chất gây ung thư chứa trong thực phẩm, thức ăn:",
+                options: [
+                    "Các hợp chất N-Nitroso",
+                    "Aflatoxin",
+                    "Benzopyrene",
+                    "Tất cả đáp án trên đều đúng"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Sợi asbestos (ở người thợ hút bụi amiang) là nguyên nhân chính gây ung thư nào:",
+                options: [
+                    "Ung thư bàng quang",
+                    "Bệnh đa u tuỷ xương",
+                    "Ung thư trung mô màng phổi",
+                    "U lympho ác tính"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Thuốc lá gây ung thư là do trong khói thuốc có thành phần nào",
+                options: [
+                    "Kim loại nặng",
+                    "Hidrocacbon",
+                    "Aflatoxin",
+                    "Nitrosamin"
+                ],
+                correctIndex: 1
+            },
+            {
+                q: "Tác nhân có thể gây ung thư bàng quang:",
+                options: [
+                    "Nitrosamine",
+                    "Aflatoxin",
+                    "EBV",
+                    "Thuốc lá"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "ung thư nguyên phát buồng trúng tỷ số nguy cơ RR là bao nhiêu",
+                options: [
+                    "100",
+                    "24",
+                    "130",
+                    "65"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "ung thư nguyên phát đa u tủy xương tỷ số nguy cơ RR là bao nhiêu",
+                options: [
+                    "210",
+                    "100",
+                    "24",
+                    "65"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Ung thư da do nguyên nhân nào là chủ yếu",
+                options: [
+                    "Bức xạ tia cực tím",
+                    "Do di truyền",
+                    "Do nhiễm virus",
+                    "Không có nguyên nhân"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "ung thư cổ tử cung liên quan vi rút nào",
+                options: [
+                    "HPV",
+                    "viêm gan B",
+                    "herpes",
+                    "Không có đáp án đúng"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "tia X có thể gây ra các bệnh ung thư sau:",
+                options: [
+                    "Ung thư phổi, ung thư da",
+                    "Ung thư vú, ung thư xương",
+                    "Ung thư xương, bệnh bạch cầu cấp",
+                    "Ung thư da, bệnh bạch cầu cấp"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Những cơ quan nhạy cảm nhất với tia phóng xạ.",
+                options: [
+                    "Não, xương",
+                    "Tim, gan",
+                    "Tuyến giáp, tủy xương",
+                    "Dạ dày, thận"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Những loại virus sinh ung thư gồm:",
+                options: [
+                    "Virus Epstein-Barr",
+                    "Virus viêm gan B",
+                    "Virus gây u nhú ở người (HPV)",
+                    "Cả A, B, C đều đúng"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Các nhóm tác nhân chính gây ra bệnh ung thư gồm:",
+                options: [
+                    "Tác nhân hóa học",
+                    "Tác nhân vật lý",
+                    "Tác nhân sinh học",
+                    "Cả A, B, C đều đúng"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Về tác nhân dinh dưỡng. Chọn ý sai?",
+                options: [
+                    "Khẩu phần bữa ăn đóng một vai trò quan trọng trong gây bệnh ung thư",
+                    "Aflatoxin là một chất gây ra bệnh ung thư gan",
+                    "Ung thư vú không liên quan đến tác nhân dinh dưỡng",
+                    "Các chất đóng vai trò làm giảm nguy cơ sinh ung thư: vitamin, chất xơ"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Virus Epstein Barr (EBV) có thể là nguyên nhân gây ung thư",
+                options: [
+                    "Phổi",
+                    "Đại tràng",
+                    "Vòm họng",
+                    "Cổ tử cung"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Chọn đáp án đúng nhất:",
+                options: [
+                    "Nguy cơ ung thư giảm khi bỏ hút thuốc lá",
+                    "Chế độ ăn nhiều mỡ, ít rau tăng nguy cơ ung thư đại tràng",
+                    "Ăn nhiều đồ nướng, đồ muối tăng nguy cơ gây ung thư",
+                    "Tất cả đều đúng"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Virus HPV liên quan đến bệnh nào?",
+                options: [
+                    "Ung thu gan",
+                    "Ung thư phổi",
+                    "Ung thư cổ tử cung",
+                    "Ung thư hắc tổ"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Đâu KHÔNG PHẢI là tác nhân hóa học gây K ?",
+                options: [
+                    "Bức xạ ion hóa",
+                    "Thuốc lá",
+                    "Dinh dưỡng",
+                    "Cȧ A,B,C"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Chất nào dưới đây gây ung thư?",
+                options: [
+                    "Nitrosamin",
+                    "Aflatoxin",
+                    "Paradimethyl Amino Benzen",
+                    "Cả A,B,C"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "tác nhân vật lý gồm:",
+                options: [
+                    "bức xạ ion hóa",
+                    "thuốc lá",
+                    "dinh dưỡng",
+                    "virus sinh ung thư"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "yếu tố di truyền và suy giảm miễn dịch",
+                options: [
+                    "bệnh da có nguồn gốc gen",
+                    "virus gây u nhú ở người",
+                    "người hút thuốc",
+                    "ăn trầu"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Nitrosamin là chất gây ung thư có bản chất là tác nhân:",
+                options: [
+                    "Hóa học",
+                    "Vật lý",
+                    "Sinh học",
+                    "Yếu tố di truyền"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Có mấy nhóm nguyên nhân có thể gây ra ung thư ?",
+                options: [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Aflatoxin, 1 trong những chất gây ung thư có nguồn gốc từ:",
+                options: [
+                    "Khỏi thuốc lá",
+                    "Nấm men",
+                    "Mỡ động vật",
+                    "Nguồn nước nhiễm bẩn"
+                ],
+                correctIndex: 1
+            },
+            {
+                q: "Thuốc lá là nguyên nhân hàng đầu gây nên loại ung thư nào sau đây.",
+                options: [
+                    "Ung thư dạ dày",
+                    "Ung thư bàng quang",
+                    "Ung thư phế quản",
+                    "Ung thư vòm họng"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Tác nhân vật lý gây K:",
+                options: [
+                    "Bức xạ ion hóa.",
+                    "Thuốc lá",
+                    "Thịt đỏ",
+                    "Virut"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Tác nhân chính gây ung thư",
+                options: [
+                    "Vật lý",
+                    "Hoa Học",
+                    "Sinh học",
+                    "Tất cả đều đúng"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "các tác nhân gây ung thư bao gồm:",
+                options: [
+                    "tác nhân vật lý",
+                    "tác nhân hóa học",
+                    "tác nhân sinh học",
+                    "yếu tố di truyền",
+                    "tất cả đáp án trên đều đúng"
+                ],
+                correctIndex: 4
+            },
+            {
+                q: "bức xạ tia cực tím là tác nhân chủ yếu gây nên ung thư:",
+                options: [
+                    "ung thư tuyến tiền liệt",
+                    "ung thư da",
+                    "ung thư phổi",
+                    "ung thư buồng trứng"
+                ],
+                correctIndex: 1
+            },
+            {
+                q: "Sợi asbestos (ở người thợ hút bụi amiang) là nguyên nhân chính gây ung thư nào:",
+                options: [
+                    "Ung thư bàng quang",
+                    "Bệnh đa u tuỷ xương",
+                    "Ung thư trung mô màng phổi",
+                    "U lympho ác tính"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Thuốc lá là nguyên nhân gây ung thư phế quản chiếm bao nhiêu phần trăm",
+                options: [
+                    "90",
+                    "95",
+                    "97",
+                    "99"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Thuốc lá có thể gây ra các loại ung thư, trừ:",
+                options: [
+                    "Phế quản-phổi",
+                    "Khoang miệng",
+                    "Xương",
+                    "Tiết niệu"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Nitrosamine là chất gây ung thư có bản chất là tác nhân:",
+                options: [
+                    "Hoá học",
+                    "Vật lý",
+                    "Sinh học",
+                    "Yếu tố di truyền"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Biến đổi ngoại di truyền trong quá trình methyl hóa DNA thường liên quan đến",
+                options: [
+                    "ung thư ruột kết",
+                    "ung thư nguyên bào lympho ở trẻ em",
+                    "ung thư vòm họng",
+                    "u não"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Các sai hỏng dẫn đến ung thư thường có khả năng khuếch đại và cộng gộp với nhau, trừ:",
+                options: [
+                    "đột biến ở hệ thống kiểm soát lỗi của tế bào có thể khiến nó và đời sau tích lũy thêm nhiều đột biến khác",
+                    "đột biến ở bộ máy thu nhận có thể gây lỗi đến tế bào khác",
+                    "đột biến ở gen sinh ung thư có thể khiến tế bào tăng sinh với tốc độ và tần suất lớn hơn",
+                    "Đột biến làm bất hoạt gen ức chế khối u"
+                ],
+                correctIndex: 1
+            },
+            {
+                q: "Tác nhân chủ yếu gây ung thư da",
+                options: [
+                    "Tia cực tím",
+                    "Tia hồng ngoại",
+                    "Tia bức xạ",
+                    "Tia Xquang"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Tác nhân gây ung thư dạ dày:",
+                options: [
+                    "Nitrosamine",
+                    "EBV",
+                    "3-4 benzopyren",
+                    "HBV"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Đâu là tác nhân vật lý gây ung thư",
+                options: [
+                    "Thuốc lá",
+                    "Bức xạ cực tím",
+                    "Dinh dưỡng",
+                    "Thuốc"
+                ],
+                correctIndex: 1
+            },
+            {
+                q: "Virut nào gây ung thư gan nguyên phát",
+                options: [
+                    "Virut Epstein Barr",
+                    "Virut viêm gan A",
+                    "Virut viêm gan B",
+                    "Virut viêm gan C"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Tác nhân gây ung thư đại trực tràng:",
+                options: [
+                    "Aflatoxin",
+                    "Thuốc lá",
+                    "Mỡ động vật",
+                    "EBV"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "các chất ung thư chứa trong thực phẩm, thức ăn",
+                options: [
+                    "nitrosamin",
+                    "aflatoxin",
+                    "benzopyrene",
+                    "tất cả đáp án trên đúng"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Gen p53 gây là nguyên nhân gây ra ung thư nào dưới đây ?",
+                options: [
+                    "Ung thư đại tràng",
+                    "Ung thư vòm họng",
+                    "Ung thư buồng trứng",
+                    "U lympho"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Đặc tính nào sau đây có ở tế bào ung thư:",
+                options: [
+                    "Tăng kích thước tế bào",
+                    "Giảm tỉ lệ nhân so với bào tương",
+                    "Tăng ức chế tiếp xúc",
+                    "Tăng kích thước nhân"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Bức xạ cực tím chủ yếu gây ra ung thư ở đâu?",
+                options: [
+                    "Tuyến giáp",
+                    "Phổi",
+                    "Xương",
+                    "Da"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Về tác nhân dinh dưỡng. Chọn ý sai?",
+                options: [
+                    "Khẩu phần bữa ăn đóng một vai trò quan trọng trong gây bệnh ung thư",
+                    "Aflatoxin là một chất gây ra bệnh ung thư gan",
+                    "Ung thư vú không liên quan đến tác nhân dinh dưỡng",
+                    "Các chất đóng vai trò làm giảm nguy cơ sinh ung thư: vitamin, chất xơ"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Bức xạ ion hóa gây ung thư cao nhất ở đâu?",
+                options: [
+                    "Tuyến giáp",
+                    "Phổi",
+                    "Xương",
+                    "Da"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Nitrosamine là chất gây ung thư có bản chất là tác nhân:",
+                options: [
+                    "Sinh học",
+                    "Vật lý",
+                    "Hóa học",
+                    "Yếu tố di truyền"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Các nguyên nhân bên trong gây ung thư là:",
+                options: [
+                    "Di truyền, sinh học, hoá học, vật lý",
+                    "Nội tiết, sinh học, hoá học, vật lý",
+                    "Di truyền, nội tiết",
+                    "Di truyền, nội tiết, vật lý, hoá học, sinh học"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Tác nhân vật lý gây ung thư là:",
+                options: [
+                    "pH",
+                    "Uranium",
+                    "Nicotine",
+                    "3-4 Benzopyren"
+                ],
+                correctIndex: 1
+            },
+            {
+                q: "Khuynh hướng săn sóc sức khỏe cộng đồng nhằm:",
+                options: [
+                    "Nâng cao tỷ lệ điều trị",
+                    "Phát hiện sớm ung thư",
+                    "Hạ thấp tỷ lệ mắc bệnh",
+                    "Tìm nguyên nhân"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Có bao nhiêu nhóm tác nhân chính gây ung thư:",
+                options: [
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Nguyên nhân gây ung thư gây ung thư cổ tử cung, âm đạo, âm hộ có thể là ... (điền vào chỗ trống)",
+                options: [
+                    "VR Epstein-Barr",
+                    "Virus viêm gan B (HBV)",
+                    "Virus gây u nhú ở người HPV",
+                    "Virus HTLV"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Virus Epstein Barr (EBV) có thể là nguyên nhân gây ung thư",
+                options: [
+                    "Phổi",
+                    "Đại tràng",
+                    "Vòm họng",
+                    "Cổ tử cung"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Độc tố nào sau đây thường gây ung thư gan:",
+                options: [
+                    "Aflatoxin",
+                    "Nitrosamine",
+                    "Hợp chất N-nitroso",
+                    "Các chất trong trầu khi nhai"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Phơi nhiễm bức xạ ion hóa có thể gây nên:",
+                options: [
+                    "Ung thư vú",
+                    "Bệnh bạch cầu",
+                    "Ung thư tuyến giáp",
+                    "Tất cả đều đúng"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Có bao nhiêu nhóm tác nhân chính gây ung thư?",
+                options: [
+                    "3",
+                    "4",
+                    "5",
+                    "6"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Có mấy loại virus liên quan đến bệnh ung thư?",
+                options: [
+                    "4",
+                    "5",
+                    "6",
+                    "7"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Nitrosamine là chất gây ung thư liên quan đến cơ quan nào:",
+                options: [
+                    "Vòm mũi họng",
+                    "Tiêu hóa",
+                    "cơ xương khớp",
+                    "tiết niệu"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Aflatoxin sinh ra từ nấm mốc Aspergillus flavus là chất gây ra ung thư nào:",
+                options: [
+                    "Ung thư phổi",
+                    "Ung thư gan",
+                    "Ung thư cổ tử cung",
+                    "Tất cả đáp án trên"
+                ],
+                correctIndex: 1
+            },
+            {
+                q: "Các nhóm tác nhân chính gây ra bệnh ung thư gồm:",
+                options: [
+                    "Tác nhân hóa học",
+                    "Tác nhân vật lý",
+                    "Tác nhân sinh học",
+                    "Cả A, B, C đều đúng"
+                ],
+                correctIndex: 3,
+                keepOrder: true
+            },
+            {
+                q: "Có bao nhiêu virus liên quan đến bệnh ung thư",
+                options: [
+                    "4",
+                    "3",
+                    "7",
+                    "9"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Những nguyên nhân nào có thể gây ung thư ?",
+                options: [
+                    "Bức xạ",
+                    "HPV",
+                    "Nitrosamin",
+                    "Tất cả đáp án trên"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Bức xạ cực tím chủ yếu gây ung thư gian",
+                options: [
+                    "Ung thư tuyến giáp",
+                    "Ung thư bạch cầu",
+                    "Ung thư da",
+                    "Ung thư vòm họng"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "các loại vitamin A, C, E làm giảm nguy cơ một số bệnh ung thư như:",
+                options: [
+                    "K biểu mô",
+                    "K dạ dày",
+                    "K thực quản",
+                    "K gan"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "ung thư nào sau đây không liên quan đến nội tiết",
+                options: [
+                    "ung thư vú",
+                    "ung thư phổi",
+                    "ung thư tuyến tiền liệt",
+                    "ung thư nội mạc"
+                ],
+                correctIndex: 1
+            },
+            {
+                q: "Sử dụng thuốc Tamoxifen trong 5 năm, có thể làm giảm ... ung thư ở phụ nữ có nguy cơ cao",
+                options: [
+                    "20%",
+                    "30%",
+                    "40%",
+                    "50%"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Những tác nhân có thể gây ra Ung thư Vòm là:",
+                options: [
+                    "Uranium",
+                    "Nitrosamin",
+                    "Aflatoxin",
+                    "Benzopyren"
+                ],
+                correctIndex: 1
+            },
+            {
+                q: "Những tác nhân gây Ung thư Gan, Ngoại trừ:",
+                options: [
+                    "Aflatoxin",
+                    "Virut Viêm Gan B",
+                    "Paradimethyl Amino Benzen",
+                    "Uranium"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Virut nào dưới đây có liên ụng đến ung thư?",
+                options: [
+                    "VR Epstein-Barr",
+                    "VR viêm gan B",
+                    "HPV",
+                    "Cả A, B, C"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Kí sinh trùng nào dưới đây được coi là nguyên nhân gây K",
+                options: [
+                    "Sán Schistosoma",
+                    "Trichuris trichiura",
+                    "Ascariasis",
+                    "Strongyloides stercoralis"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Nguyên nhân chính ung thư phế quản",
+                options: [
+                    "Hút thuốc lá",
+                    "Viêm phổi",
+                    "Ăn trầu",
+                    "Hút thuốc lào"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Có mấy loại virut liên quan đến bệnh ung thư",
+                options: [
+                    "4",
+                    "5",
+                    "6",
+                    "2"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Có bao nhiêu tác nhân vật lý gây ung thư:",
+                options: [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ],
+                correctIndex: 1
+            },
+            {
+                q: "Có bao nhiêu loại virus liên quan đến bệnh ung thư:",
+                options: [
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Thuốc lá gây ung thư là do trong khói thuốc có thành phần nào",
+                options: [
+                    "Kim loại nặng",
+                    "Hidrocacbon",
+                    "Aflatoxin",
+                    "Nitrosamin"
+                ],
+                correctIndex: 1
+            },
+            {
+                q: "Tác nhân hóa học gây ung thư là:",
+                options: [
+                    "Thuốc lá",
+                    "Dinh dưỡng",
+                    "Tác nhân nghề nghiệp",
+                    "Tất cả đáp ăn trên"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Nhiều loại ung thư có liên quan đến dinh dưỡng, trừ:",
+                options: [
+                    "Ung thư thực quản",
+                    "Ung thư gan",
+                    "Ung thư xương",
+                    "Ung thư vòm mũi họng"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "phải điều trị thay thế estrogen làm tăng nguy cơ bị ung thư gì",
+                options: [
+                    "Ung thư cổ tử cung",
+                    "Ung thư buồng trứng",
+                    "Ung thư nội mạc tử cung",
+                    "Ung thư âm đạo"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Những nguyên nhân nào có thể gây ung thư ?",
+                options: [
+                    "Bức xạ",
+                    "HPV",
+                    "Nitrosamin",
+                    "Tất cả đáp án trên"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Hoá chất tiêu biểu gây Đa u tủy xương là?",
+                options: [
+                    "Melphatan",
+                    "Cyclophosphamide",
+                    "Phenacetin",
+                    "Alkylant."
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Bức xạ cực tím chủ yếu gây ra ung thư ở đâu?",
+                options: [
+                    "Tuyến giáp",
+                    "Phổi",
+                    "Xương",
+                    "Da"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Những loại virus sinh ung thư gồm:",
+                options: [
+                    "Virus Epstein-Barr",
+                    "Virus viêm gan B",
+                    "Virus gây u nhú ở người (HPV)",
+                    "Cả A, B, C đều đúng"
+                ],
+                correctIndex: 3,
+                keepOrder: true
+            },
+            {
+                q: "Aflatoxin sinh ra từ nấm mốc Aspergillus flavus, là I chất gây ra bệnh",
+                options: [
+                    "Ung thư gan",
+                    "Ung thư phổi",
+                    "Ung thư vú",
+                    "Ung thư da"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Chất Paradimethyl Amino Benzen dùng để nhuộm bơ thành “bơ vàng” có khả năng:",
+                options: [
+                    "Ung thư gan",
+                    "Ung thư phổi",
+                    "Ung thư vú",
+                    "Ung thư da"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Tác động của tia phóng xạ gây ung thư ở người phụ thuộc vào yếu tố nào sau đây",
+                options: [
+                    "Tuổi tiếp xúc",
+                    "Mối liên hệ liều - đáp ứng",
+                    "Cơ quan bị chiếu xạ",
+                    "Tất cả các đáp án trên"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Dinh đường chiếm bao nhiêu % trong các nguyên nhân gây bệnh K?",
+                options: [
+                    "25 %",
+                    "35%",
+                    "45%",
+                    "55%"
+                ],
+                correctIndex: 1
+            },
+            {
+                q: "Ung thư là bệnh lý ác tính của tế bào mà tế bào tăng sinh vô hạn độ bên ngoài ... của cơ thể",
+                options: [
+                    "End end",
+                    "Ổn định",
+                    "Phát triển",
+                    "Kiểm soát"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Tế bào bình thường khi đang phát triển ở phân chia nếu tiếp xúc với tế bào bình thường cũng đang phân bào thì quá trình phân bào",
+                options: [
+                    "Chấm dứt",
+                    "Next",
+                    "Được đưa ra",
+                    "Bị ức chế"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Có bao nhiêu virus liên quan đến bệnh ung thư?",
+                options: [
+                    "4",
+                    "3",
+                    "7",
+                    "9"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "nguyên nhân virus nào thường gặp gây ung thư biểu mô vòm họng",
+                options: [
+                    "EBV",
+                    "HTLV 1",
+                    "HBV",
+                    "HCV"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Các nguyên nhân gây ra ung thư",
+                options: [
+                    "Tác động của các yếu tố môi trường",
+                    "Ảnh hưởng tử lối sống",
+                    "Di truyền",
+                    "Tất cả đáp án trên"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Nguy cơ gây ung thư",
+                options: [
+                    "Tuổi tác, béo phì",
+                    "Rượu bia, thuốc là",
+                    "Viêm mạn tính",
+                    "Tất cả các ý trên"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Virus HPV gây u nhú ở người lây truyền qua đường nào",
+                options: [
+                    "da, niêm mạc",
+                    "máu",
+                    "sinh dục",
+                    "tiêu hóa"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Ý nào sau đây ko phải tác nhân hóa học gây ung thư:",
+                options: [
+                    "thuốc lá",
+                    "dinh dưỡng",
+                    "bức xạ cực tím",
+                    "một số thuốc"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "dự phòng bước 1 phải dựa trên các yếu tố nào sau đây:",
+                options: [
+                    "nguyên nhân sinh ung thư",
+                    "được áp dụng cho những loại ung thư có tỉ lệ tử vong cao trong cộng đồng",
+                    "test sàng lọc",
+                    "tính khả thi"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "thuốc lá là nguyên nhân gây ... bệnh ung thư phổi:",
+                options: [
+                    "70%",
+                    "80%",
+                    "60%",
+                    "90%"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Nhóm tác nhân chính gây ung thư là:",
+                options: [
+                    "Vật lý, Hoá học, Sinh Học",
+                    "Vật lý, Hóa học",
+                    "Sinh học",
+                    "B, C sai"
+                ],
+                correctIndex: 0,
+                keepOrder: true
+            },
+            {
+                q: "Tác nhân vật lý không bao gồm:",
+                options: [
+                    "Bức xạ ion hoá",
+                    "Bức xạ cực tím",
+                    "Thuốc lá",
+                    "A, B đúng"
+                ],
+                correctIndex: 2,
+                keepOrder: true
+            },
+            {
+                q: "Loại virus nguy cơ gây ung thư:",
+                options: [
+                    "Chlamydia",
+                    "Epstein-Barr",
+                    "HIV",
+                    "Helicobacter"
+                ],
+                correctIndex: 1
+            },
+            {
+                q: "Nguyên nhân chủ yếu gây ung thư da:",
+                options: [
+                    "Tia X",
+                    "Tia cực tím trong ánh mặt trời",
+                    "Ánh sáng đèn neon",
+                    "Ánh sáng đèn led"
+                ],
+                correctIndex: 1
+            },
+            {
+                q: "ung thư nguyên phát buồng trứng tỷ số nguy cơ RR là bao nhiêu",
+                options: [
+                    "100",
+                    "24",
+                    "130",
+                    "65"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "ung thư nguyên phát đa u tủy xương tỷ số nguy cơ RR là bao nhiêu",
+                options: [
+                    "210",
+                    "100",
+                    "24",
+                    "65"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Tác nhân chủ yếu gây ung thư da",
+                options: [
+                    "Tia cực tím",
+                    "Tia hồng ngoại",
+                    "Tia bức xạ",
+                    "Tia Xquang"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Ung thư do nghề nghiệp ước tính là nhóm nguyên nhân gây ung thư chiếm:",
+                options: [
+                    "2-8%",
+                    "10-15%",
+                    "20-25%",
+                    "18-20%"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Chọn đáp án KHÔNG đúng",
+                options: [
+                    "Bức xạ ion hóa là tác nhân vật lí gây ung thư",
+                    "Một số thuốc là tác nhân hóa học gây ung thư",
+                    "Dinh dưỡng là tác nhân hóa học gây ung thư",
+                    "Dinh dưỡng là tác nhân vật lí gây ung thư"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Phụ nữ bị ung thư vú có hormone:",
+                options: [
+                    "estrogen cao, progesteron bình thường",
+                    "progesteron cao, estrogen giảm",
+                    "estrogen cao, progesteron cao",
+                    "estrogen cao, progesteron giảm"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Những loại thức ăn có khả năng gây ung thư, trừ:",
+                options: [
+                    "Một số loại phẩm nhuộm thực phẩm",
+                    "Rau được phun thuốc trừ sâu",
+                    "Lạc mốc",
+                    "Pho-mát mốc"
+                ],
+                correctIndex: 1
+            },
+            {
+                q: "β-hCG có giá trị trong chẩn đoán bệnh ung thư:",
+                options: [
+                    "Cổ tử cung",
+                    "Nội mạc tử cung",
+                    "U nguyên bào nuôi",
+                    "Vú"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Thuốc lá có thể gây ra các loại ung thư, trừ:",
+                options: [
+                    "Phế quản-phổi",
+                    "Khoang miệng",
+                    "Xương",
+                    "Tiết niệu"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Nitrosamine là chất gây ung thư có bản chất là tác nhân:",
+                options: [
+                    "Hoá học",
+                    "Vật lý",
+                    "Sinh học",
+                    "Yếu tố di truyền"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Tác nhân có thể gây K bàng quang",
+                options: [
+                    "Nitrosamin",
+                    "Aflatoxin",
+                    "EBV",
+                    "Thuốc lá"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Tác nhân gây ung thư phổi",
+                options: [
+                    "EBV",
+                    "Mỡ động vật",
+                    "Phẩm nhuộm",
+                    "Amiang"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "ung thư da do nguyên nhân nào là chủ yếu",
+                options: [
+                    "Bức xạ tia cực tím",
+                    "Do di truyền",
+                    "Do nhiễm virut",
+                    "Không có nguyên nhân"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Ung thư nào sau đây không liên quan đến yếu tố nội tiết.",
+                options: [
+                    "ung thư vú",
+                    "ung thư gan",
+                    "ung thư nội mạc tử cung",
+                    "ung thư tuyến tiền liệt"
+                ],
+                correctIndex: 1
+            },
+            {
+                q: "Nguyên nhân chủ yếu gây ung thư phế quản ?",
+                options: [
+                    "Rượu",
+                    "Nghề nghiệp",
+                    "Thuốc lá",
+                    "Vi khuẩn"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Bức xạ cực tím chủ yếu gây ung thư gì?",
+                options: [
+                    "Ung thư tuyến giáp",
+                    "Ung thư bạch cầu",
+                    "Ung thư da",
+                    "Ung thư vòm họng"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Aflatoxin sinh ra từ nấm mốc Aspergillus flavus là chất gây ra ung thư nào:",
+                options: [
+                    "Ung thư dạ dày",
+                    "Ung thư phổi",
+                    "Ung thư gan",
+                    "Tất cả đáp án trên"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Chất Nitrosamin gây ung thư có nhiều trong các loại thực phẩm",
+                options: [
+                    "Hoa quả thối",
+                    "Khoai tây mọc mầm",
+                    "Lạc mốc",
+                    "Cá muối"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Tác nhân gây ung thư dạ dày:",
+                options: [
+                    "Nitrosamine",
+                    "EBV",
+                    "3-4 benzopyren",
+                    "HBV"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Nhiều loại ung thư có liên quan đến dinh dưỡng, trừ:",
+                options: [
+                    "Ung thư thực quản",
+                    "Ung thư gan",
+                    "Ung thư xương",
+                    "Ung thư vòm mũi họng"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Có bao nhiêu loại virus gây ung thư",
+                options: [
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Nguyên nhân nào sau đây không gây ung thư?",
+                options: [
+                    "Thức ăn",
+                    "Tiếp xúc hóa chất",
+                    "Vi khuẩn",
+                    "Chất phóng xạ"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Aflatoxin sinh ra nấm mốc Aspergillus flavus, là nguyên nhân gây ung thư",
+                options: [
+                    "Đại tràng",
+                    "Dạ dày",
+                    "Gan",
+                    "Bàng quang"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Virut gây u nhú ở người (HPV) thường lan truyền qua đường nào",
+                options: [
+                    "Sinh dục",
+                    "Máu",
+                    "Kế cận",
+                    "Tất cả đều đúng"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Aflatoxin sinh ra từ đầu?",
+                options: [
+                    "Nấm mốc Aspergillus flavus",
+                    "Nấm Candida",
+                    "Vi khuẩn lên men Đ.Chất bảo quản thức ăn"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Tác nhân gây ung thư đại trực tràng:",
+                options: [
+                    "Aflatoxin",
+                    "Thuốc lá",
+                    "Mỡ động vật",
+                    "EBV"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Trong ung thư phế quản, thuốc lá chiếm:",
+                options: [
+                    "70%",
+                    "80%",
+                    "90%",
+                    "100%"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Người hút thuốc lá có nguy cơ mắc ung thư phế quản gấp:",
+                options: [
+                    "7 lần người không hút",
+                    "8 lần người không hút",
+                    "9 lần người không hút",
+                    "10 lần người không hút"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Gen p53 gây là nguyên nhân gây ra ung thư nào dưới đây ?",
+                options: [
+                    "Ung thư vòm họng",
+                    "Ung thư đại tràng",
+                    "Ung thư buồng trứng",
+                    "Ung thư Lympho"
+                ],
+                correctIndex: 1
+            },
+            {
+                q: "HPV gây ung thư gì?",
+                options: [
+                    "Cổ tử cung và dương vật",
+                    "Phổi",
+                    "Xương",
+                    "Vú"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "thuốc là nguyên nhân của khoảng ...% ung thư phế quản",
+                options: [
+                    "70",
+                    "80",
+                    "90",
+                    "100"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "nếu hút trên 20 điếu một ngày, nguy cơ mắc ung thư phế quản cao gấp bao nhiêu lần người không hút thuốc",
+                options: [
+                    "5-10",
+                    "10-15",
+                    "15-20",
+                    "20-25"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Nguyên nhân gây ung thư. Chọn đáp án sai",
+                options: [
+                    "3 nhóm tác nhân gây ung thư",
+                    "4 nhóm tác nhân gây ung thư",
+                    "Gồm các nhóm nguyên nhân: vật lý, hóa học, sinh học",
+                    "Một bệnh ung thư có thể do nhiều nhóm nguyên nhân"
+                ],
+                correctIndex: 1
+            },
+            {
+                q: "Nguyên nhân gây ung thư. Chọn đáp án sai",
+                options: [
+                    "Thuốc là là nguyên nhân hàng đầu gây ung thư phế quản",
+                    "Tia cực tím không gây ung thư",
+                    "Dinh dưỡng chiếm khoảng 35% nguyên nhân gây ung thư"
+                ],
+                correctIndex: 1
+            },
+            {
+                q: "Dinh dưỡng chiếm khoảng bao nhiêu % nguyên nhân gây ung thư:",
+                options: [
+                    "30",
+                    "40",
+                    "35",
+                    "45"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Virus HTLV 1 liên quan đến bệnh gì:",
+                options: [
+                    "ung thư gan",
+                    "ung thư vòm họng",
+                    "ung thư vùng âm hộ",
+                    "bệnh bạch cầu tế bào T"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Có bao nhiêu nhóm tác nhân chính gây ung thư:",
+                options: [
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Nhiều loại ung thư có liên quan đến dinh dưỡng trừ:",
+                options: [
+                    "Ung thư thực quản",
+                    "Ung thư gan",
+                    "Ung thư xương",
+                    "Ung thư vòm mũi họng"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Tác nhân gây ung thư đại trực tràng:",
+                options: [
+                    "Aflatoxin",
+                    "Thuốc lá",
+                    "Mở động vật",
+                    "EBV"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "Những loại thức ăn có khả năng gây ung thư, trừ:",
+                options: [
+                    "Một số loại phẩm nhuộm thực phẩm",
+                    "Rau được phun thuốc trừ sâu",
+                    "Lạc mốc",
+                    "Pho-mát mốc"
+                ],
+                correctIndex: 1
+            },
+            {
+                q: "Người hút thuốc lá có nguy cơ ung thư phế quản gấp bao nhiêu lần không hút:",
+                options: [
+                    "5",
+                    "10",
+                    "15",
+                    "20"
+                ],
+                correctIndex: 1
+            },
+            {
+                q: "Dinh dưỡng chiếm bao nhiêu % trong nguyên nhân gây bệnh ung thư",
+                options: [
+                    "30",
+                    "40",
+                    "35",
+                    "45"
+                ],
+                correctIndex: 2
+            },
+            {
+                q: "ung thư nguyên phát buồng trứng tỷ số nguy cơ RR là bao nhiêu",
+                options: [
+                    "100",
+                    "24",
+                    "130",
+                    "65"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "12 ung thư nguyên phát đa u tủy xương tỷ số nguy cơ RR là bao nhiêu",
+                options: [
+                    "210",
+                    "100",
+                    "24",
+                    "65"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Các loại virus liên quan đến bệnh ung thư?",
+                options: [
+                    "Virus Epstein - Bar",
+                    "Virus viêm gan B",
+                    "Virus HPV",
+                    "Virus HTLV I",
+                    "Tất cả đều dùng"
+                ],
+                correctIndex: 4
+            },
+            {
+                q: "Virus HPV liên quan đến bệnh nào?",
+                options: [
+                    "Ung thư bắc tổ",
+                    "Ung thư phổi",
+                    "Ung thư cổ tử cung",
+                    "Ung thư gan"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Chất Nitrosamin gây ung thư có nhiều trong các loại thực phẩm :",
+                options: [
+                    "Hoa quà thổi",
+                    "Khoai tây mọc mầm",
+                    "Lạc mốc",
+                    "Cá muối"
+                ],
+                correctIndex: 3
+            },
+            {
+                q: "Có bao nhiêu nguyên nhân gây ra ung thư ?",
+                options: [
+                    "Nhiều nguyên nhân",
+                    "1 nguyên nhân",
+                    "Vô số nguyên nhân",
+                    "4 Nguyên nhân"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Tác nhân vật lý gây ra ung thư?",
+                options: [
+                    "Bức xạ cực tím",
+                    "Tia hồng ngoại",
+                    "Nhiệt độ",
+                    "Trọng lực"
+                ],
+                correctIndex: 0
+            },
+            {
+                q: "Người da trắng sống ở vùng nhiệt đới có tỷ lệ mắc loại ung thư nào cao hơn người da màu ?",
+                options: [
+                    "Dạ dày",
+                    "Vòm họng",
+                    "Phế quản",
+                    "Hắc tố da"
+                ],
+                correctIndex: 3
             }
         ]
     },
