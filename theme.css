@@ -203,3 +203,7 @@ body.dark-mode .btn-close-modal {
 body.dark-mode .btn-close-modal:hover {
     color: #ff6b6b;
 }
+
+body.dark-mode .modal-content p {
+    color: #e2e8f0 !important;
+}
