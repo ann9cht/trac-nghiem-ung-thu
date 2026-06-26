@@ -4,8 +4,6 @@ const database = [
     // =========================================================================
     {
         title: "Bài 1. Khái niệm cơ bản về bệnh ung thư",
-        badge: "✔️ Up xong",
-        badgeType: "done",
         questions: [
             {
                 q: "Có bao nhiêu phương pháp điều trị ung thư hiện nay  ?",
@@ -179,8 +177,6 @@ const database = [
     // =========================================================================
     {
         title: "Bài 2. Dịch tễ học mô tả bệnh ung thư",
-        badge: "✔️ Up xong",
-        badgeType: "done",
         questions: [
             {
                 q: "Tỉ lệ tử vong được tính bằng:",
@@ -1470,8 +1466,6 @@ const database = [
     // =========================================================================
     {
         title: "Bài 3. Quá trình tiến triển tự nhiên của ung thư",
-        badge: "✔️ Up xong",
-        badgeType: "done",
         questions: [
             {
                 q: "Quá trình tiến triển tự nhiên của ung thư trải qua bao nhiêu giai đoạn ?",
@@ -2916,8 +2910,6 @@ const database = [
     // =========================================================================
     {
         title: "Bài 4. Nguyên nhân ung thư",
-        badge: "✔️ Up xong",
-        badgeType: "done",
         questions: [
             {
                 q: "Thuốc lá là nguyên nhân hàng đầu gây ra bệnh ?",
@@ -3572,7 +3564,7 @@ const database = [
                 correctIndex: 3
             },
             {
-                q: "Bức xạ cực tím chủ yếu gây ung thư gian",
+                q: "Bức xạ cực tím chủ yếu gây ung thư gì?",
                 options: [
                     "Ung thư tuyến giáp",
                     "Ung thư bạch cầu",
@@ -3632,7 +3624,7 @@ const database = [
                 correctIndex: 3
             },
             {
-                q: "Virut nào dưới đây có liên ụng đến ung thư?",
+                q: "Virut nào dưới đây có liên quan đến ung thư?",
                 options: [
                     "VR Epstein-Barr",
                     "VR viêm gan B",
@@ -3707,7 +3699,7 @@ const database = [
                     "Thuốc lá",
                     "Dinh dưỡng",
                     "Tác nhân nghề nghiệp",
-                    "Tất cả đáp ăn trên"
+                    "Tất cả đáp án trên"
                 ],
                 correctIndex: 3
             },
@@ -3773,7 +3765,7 @@ const database = [
                 keepOrder: true
             },
             {
-                q: "Aflatoxin sinh ra từ nấm mốc Aspergillus flavus, là I chất gây ra bệnh",
+                q: "Aflatoxin sinh ra từ nấm mốc Aspergillus flavus, là 1 chất gây ra bệnh",
                 options: [
                     "Ung thư gan",
                     "Ung thư phổi",
@@ -3803,7 +3795,7 @@ const database = [
                 correctIndex: 3
             },
             {
-                q: "Dinh đường chiếm bao nhiêu % trong các nguyên nhân gây bệnh K?",
+                q: "Dinh dưỡng chiếm bao nhiêu % trong các nguyên nhân gây bệnh K?",
                 options: [
                     "25 %",
                     "35%",
@@ -3856,7 +3848,7 @@ const database = [
                 q: "Các nguyên nhân gây ra ung thư",
                 options: [
                     "Tác động của các yếu tố môi trường",
-                    "Ảnh hưởng tử lối sống",
+                    "Ảnh hưởng từ lối sống",
                     "Di truyền",
                     "Tất cả đáp án trên"
                 ],
@@ -3866,7 +3858,7 @@ const database = [
                 q: "Nguy cơ gây ung thư",
                 options: [
                     "Tuổi tác, béo phì",
-                    "Rượu bia, thuốc là",
+                    "Rượu bia, thuốc lá",
                     "Viêm mạn tính",
                     "Tất cả các ý trên"
                 ],
@@ -4460,8 +4452,6 @@ const database = [
     // =========================================================================
     {
         title: "Bài 5. Cơ chế sinh bệnh ung thư",
-        badge: "✔️ Up xong",
-        badgeType: "done",
         questions: [
             {
                 q: "Ung thư đại tràng do tổn thương gen nào ?",
@@ -5538,8 +5528,6 @@ const database = [
     // =========================================================================
     {
         title: "Bài 6. Dự phòng ung thư",
-        badge: "🚧 Đang up",
-        badgeType: "warn",
         questions: [
             {
                 q: "Dự phòng ung thư bao gồm mấy bước ?",
@@ -5573,8 +5561,6 @@ const database = [
     // =========================================================================
     {
         title: "Bài 7. Chẩn đoán bệnh ung thư",
-        badge: "🚧 Đang up",
-        badgeType: "warn",
         questions: [
             {
                 q: "Triệu chứng báo hiệu ung thư là ?",
@@ -5593,8 +5579,6 @@ const database = [
     // =========================================================================
     {
         title: "Bài 8. Nguyên tắc điều trị bệnh ung thư",
-        badge: "🚧 Đang up",
-        badgeType: "warn",
         questions: [
             {
                 q: "Trong 2 năm đầu bệnh nhân thường được khám lại theo chu kỳ nào sau đây:",
@@ -5608,8 +5592,6 @@ const database = [
     // =========================================================================
     {
         title: "Bài 9. Điều trị phẫu thuật bệnh ung thư",
-        badge: "🚧 Đang up",
-        badgeType: "warn",
         questions: [
             {
                 q: "Nguyên tắc phẫu thuật ung thư bao gồm:",
@@ -5628,8 +5610,6 @@ const database = [
     // =========================================================================
     {
         title: "Bài 10. Xạ trị bệnh ung thư",
-        badge: "🚧 Đang up",
-        badgeType: "warn",
         questions: [
             {
                 q: "Các yếu tố ảnh hưởng tác động của tia phóng xạ, TRỪ:",
@@ -5648,8 +5628,6 @@ const database = [
     // =========================================================================
     {
         title: "Bài 11. Các phương pháp điều trị toàn thân",
-        badge: "🚧 Đang up",
-        badgeType: "warn",
         questions: [
             {
                 q: "Biến chứng gây nguy cơ tử vong trong điều trị hóa chất liều cao là:",
@@ -5663,8 +5641,6 @@ const database = [
     // =========================================================================
     {
         title: "Bài 12. Điều trị đau do ung thư",
-        badge: "🚧 Đang up",
-        badgeType: "warn",
         questions: [
             {
                 q: "Ý nào sau đây là đúng:",

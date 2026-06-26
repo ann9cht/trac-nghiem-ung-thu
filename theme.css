@@ -196,25 +196,6 @@ body.dark-mode .option-btn.wrong {
     color: #ff6b6b !important;
 }
 
-/* Cảnh báo đag up tiếp câu hỏi*/
-body.dark-mode .update-badge {
-    background-color: #4d4013 !important;
-    color: #ffd966 !important;
-    border-color: #665415 !important;
-}
-
-body.dark-mode .l-badge.done {
-    background-color: #1a472a !important;
-    color: #47e076 !important;
-    border-color: #2eb85c !important;
-}
-
-body.dark-mode .l-badge.warn {
-    background-color: #4d4013 !important;
-    color: #ffd966 !important;
-    border-color: #665415 !important;
-}
-
 body.dark-mode .btn-close-modal {
     color: #a1a1aa;
 }
