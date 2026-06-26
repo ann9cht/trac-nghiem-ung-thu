@@ -138,13 +138,19 @@
     </div>
     <div id="custom-modal" class="modal-overlay hidden">
         <div class="modal-content">
-            <h3>🎉 Tuyệt vời!</h3>
-            <p>Đỉnh quá bạn iu ơi, làm đúng sạch 100% rồi!</p>
-            <button class="btn btn-primary" onclick="closeModal()">OK lun</button>
+            <button class="btn-close-modal" onclick="this.closest('.modal-overlay').classList.add('hidden')">✕</button>
+            <h3 style="color: #28a745; margin-bottom: 15px;">🎉 Tuyệt vời!</h3>
+            <p id="modal-desc" style="margin-bottom: 25px; line-height: 1.5;"></p>
+            <div class="modal-button-group" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 20px;">
+                <button id="btn-home-modal" class="btn" onclick="goHomeFromModal()">Thôi, chọn bài khác</button>
+                <button id="btn-next-lesson" class="btn btn-primary" onclick="nextLessonFromModal()">Bài tiếp theo</button>
+            </div>
         </div>
     </div>
+    
     <div id="confirm-modal" class="modal-overlay hidden">
         <div class="modal-content">
+            <button class="btn-close-modal" onclick="this.closest('.modal-overlay').classList.add('hidden')">✕</button>
             <h3 class="modal-title-warning">⚠️ Xác nhận</h3>
             <p>Chắc chắn muốn xóa sạch kết quả để cày lại từ đầu không m?</p>
             <div class="modal-button-group">

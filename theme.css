@@ -214,3 +214,11 @@ body.dark-mode .l-badge.warn {
     color: #ffd966 !important;
     border-color: #665415 !important;
 }
+
+body.dark-mode .btn-close-modal {
+    color: #a1a1aa;
+}
+
+body.dark-mode .btn-close-modal:hover {
+    color: #ff6b6b;
+}

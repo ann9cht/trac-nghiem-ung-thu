@@ -113,6 +113,18 @@ function selectAnswer(i) {
     };
     renderAll();
     
+    const answeredCount = Object.keys(userAnswers).length;
+    const totalCount = activeLesson.questions.length;
+    const correctCount = Object.values(userAnswers).filter(a => a.isCorrect).length;
+
+    if (answeredCount === totalCount && correctCount === totalCount) {
+        if (autoNextTimeout) clearTimeout(autoNextTimeout);
+        setTimeout(() => {
+            showCompletionModal();
+        }, 750);
+        return;
+    }
+
     if (document.getElementById('toggle-auto-next').checked) {
         autoNextTimeout = setTimeout(() => {
             const currentPos = activeIndices.indexOf(currentQuestionIndex);
@@ -146,6 +158,28 @@ const prevQuestion = () => moveIndex(-1);
 const nextQuestion = () => moveIndex(1);
 
 function redoMistakes() {
+    const correctCount = Object.values(userAnswers).filter(a => a.isCorrect).length;
+    const totalCount = activeLesson.questions.length;
+    const answeredCount = Object.keys(userAnswers).length;
+
+    if (answeredCount === totalCount && correctCount === totalCount) {
+        const modal = document.getElementById('custom-modal');
+        const btnHome = document.getElementById('btn-home-modal');
+        const btnNext = document.getElementById('btn-next-lesson');
+
+        document.getElementById('modal-desc').innerHTML = `M đã làm đúng hết rồi! Xóa kết quả làm lại từ đầu nhá?`;
+        
+        btnHome.innerText = "Thôi";
+        btnHome.setAttribute('onclick', 'goHomeFromModal()');
+        
+        btnNext.innerText = "Làm lại từ đầu";
+        btnNext.classList.remove('hidden');
+        btnNext.setAttribute('onclick', 'closeModal(); handleConfirmReset();');
+        
+        modal.classList.remove('hidden');
+        return;
+    }
+
     document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
     
     for (let i = 0; i < activeLesson.questions.length; i++) {
@@ -160,8 +194,6 @@ function redoMistakes() {
     if (activeIndices.length) {
         currentQuestionIndex = activeIndices[0];
         renderAll();
-    } else {
-        document.getElementById('custom-modal').classList.remove('hidden');
     }
 }
 
@@ -319,7 +351,13 @@ function switchMobileTab(tab) {
 }
 
 document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+        document.querySelectorAll('.modal-overlay').forEach(modal => modal.classList.add('hidden'));
+        return;
+    }
+
     if (quizScreen.classList.contains('hidden')) return;
+    
     const pos = activeIndices.indexOf(currentQuestionIndex);
     if (pos === -1) return;
     
@@ -346,5 +384,51 @@ document.addEventListener('keydown', e => {
         if (btns[idx] && !btns[idx].disabled) btns[idx].click();
     }
 });
+
+function showCompletionModal() {
+    const modal = document.getElementById('custom-modal');
+    const btnNext = document.getElementById('btn-next-lesson');
+    const btnHome = document.getElementById('btn-home-modal');
+    
+    let shortTitle = activeLesson.title;
+    const match = activeLesson.title.match(/^(Bài\s*\d+)/i);
+    if (match) {
+        shortTitle = match[1];
+    }
+    
+    const isLastLesson = activeLessonIndex >= database.length - 1;
+    
+    let descText = `M đã hoàn thành <strong>${shortTitle}</strong> xuất sắc 100%!`;
+    if (!isLastLesson) {
+        descText += ` Làm bài tiếp theo luôn nhể?`;
+    }
+    document.getElementById('modal-desc').innerHTML = descText;
+
+    btnHome.setAttribute('onclick', 'goHomeFromModal()');
+    btnNext.setAttribute('onclick', 'nextLessonFromModal()');
+
+    if (isLastLesson) {
+        btnNext.classList.add('hidden'); 
+        btnHome.innerText = "Thoát";     
+    } else {
+        btnNext.classList.remove('hidden');       
+        btnNext.innerText = "Bài tiếp theo";
+        btnHome.innerText = "Thôi, chọn bài khác"; 
+    }
+
+    modal.classList.remove('hidden');
+}
+
+function goHomeFromModal() {
+    closeModal();
+    goHome();
+}
+
+function nextLessonFromModal() {
+    closeModal();
+    if (activeLessonIndex < database.length - 1) {
+        startLesson(activeLessonIndex + 1);
+    }
+}
 
 initHome();
