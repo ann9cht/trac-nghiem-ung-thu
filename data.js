@@ -1630,7 +1630,7 @@ const database = [
                correctIndex: 3
             },
             {
-                q: "Giai đoạn thứu 3 trong quá trình tiến triển tự nhiên của ung thư là",
+                q: "Giai đoạn thứ 3 trong quá trình tiến triển tự nhiên của ung thư là",
                 options: [
                     "Khởi phát",
                     "Thúc đẩy",
@@ -1643,7 +1643,7 @@ const database = [
                 q: "Các giai đoạn tiến triển (xâm lấn di căn) đặc trưng bằng",
                 options: [
                     "Sự tăng trưởng nhóm tế bào cư trú ở một mô nào đó đang bành trướng",
-                    "Sự tăng lên về kích thước của khối u do tăng trưởng của một nhóm tế bào ung thư cu trú ở một nơi nao đó",
+                    "Sự tăng lên về kích thước của khối u do tăng trưởng của một nhóm tế bào ung thư cư trú ở một nơi nào đó",
                     "Cho phép sự thâm nhập hay xuất hiện những ổ tế bào ung thư nhỏ",
                     "Thay đổi biểu hiện gen"
                 ],
@@ -1792,7 +1792,7 @@ const database = [
                correctIndex: 0
             },
             {
-                q: "Ý nào sau đay không đúng về giai đoạn thúc đẩy của ung thư",
+                q: "Ý nào sau đây không đúng về giai đoạn thúc đẩy của ung thư",
                 options: [
                     "Biểu hiện đặc tính phục hồi kéo dài có thể trải qua nhiều bước",
                     "Phụ thuộc vào ngưỡng của tác nhân",
@@ -2012,7 +2012,7 @@ const database = [
                 correctIndex: 0
             },
             {
-                q: "Các co quan ít bị di căn là:",
+                q: "Các cơ quan ít bị di căn là:",
                 options: [
                     "Cơ, da, tuyến ức, não",
                     "Cơ, da, tuyến ức, phổi",
@@ -3000,7 +3000,7 @@ const database = [
                 correctIndex: 3
             },
             {
-                q: "ung thư nguyên phát buồng trúng tỷ số nguy cơ RR là bao nhiêu",
+                q: "ung thư nguyên phát buồng trứng tỷ số nguy cơ RR là bao nhiêu",
                 options: [
                     "100",
                     "24",

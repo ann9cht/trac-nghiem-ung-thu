@@ -166,9 +166,23 @@ function redoMistakes() {
 }
 
 function calculateFilteredIndices() {
-    return activeLesson.questions.map((_, i) => i)
-        .filter(i => currentFilter === 'all' || (currentFilter === 'answered' && userAnswers[i]) || (currentFilter === 'redo' && (!userAnswers[i] || !userAnswers[i].isCorrect || flaggedIndices.includes(i))))
-        .sort((a, b) => (flaggedIndices.includes(a) ? -1 : 1) - (flaggedIndices.includes(b) ? -1 : 1) || a - b);
+    let indices = activeLesson.questions.map((_, i) => i)
+        .filter(i => currentFilter === 'all' || 
+                    (currentFilter === 'answered' && userAnswers[i]) || 
+                    (currentFilter === 'redo' && (!userAnswers[i] || !userAnswers[i].isCorrect || flaggedIndices.includes(i))));
+    
+    if (currentFilter === 'redo') {
+        indices.sort((a, b) => {
+            const isFlagA = flaggedIndices.includes(a);
+            const isFlagB = flaggedIndices.includes(b);
+            
+            if (isFlagA && !isFlagB) return -1;
+            if (!isFlagA && isFlagB) return 1;
+            return a - b;
+        });
+    }
+    
+    return indices;
 }
 
 function applyFilter(value, btnElement = null) {
@@ -326,7 +340,7 @@ document.addEventListener('keydown', e => {
         redoMistakes();
     } else if (c === 'KeyF') {
         toggleFlagCurrent();
-    } else if (['1', '2', '3', '4'].includes(k)) {
+    } else if (['1', '2', '3', '4', '5'].includes(k)) {
         const btns = document.querySelectorAll('#options-container .option-btn');
         const idx = parseInt(k) - 1;
         if (btns[idx] && !btns[idx].disabled) btns[idx].click();
