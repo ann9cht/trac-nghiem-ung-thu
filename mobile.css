@@ -1,0 +1,219 @@
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 20px;
+        gap: 0;
+    }
+
+    .sidebar, .main-content {
+        width: 100%;
+    }
+
+    .sidebar {
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #quiz-screen .main-content {
+        order: 1;
+        margin-bottom: 15px;
+    }
+
+    #quiz-screen .sidebar {
+        order: 2;
+        background: transparent;
+        padding: 0;
+        box-shadow: none;
+        gap: 15px;
+    }
+
+    #question-index {
+        height: auto;
+        flex: none;
+        max-height: 43vh;
+        overflow-y: auto;
+        padding-right: 5px;
+        margin-bottom: 0;
+    }
+
+    .index-grid {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+    }
+
+    .index-item {
+        padding: 12px 0;
+        font-size: 16px;
+        border-radius: 6px;
+    }
+
+    .navigation-buttons {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .nav-right {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .btn-warning {
+        width: auto;
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+    .text-pc {
+        display: none !important;
+    }
+
+    .hidden-pc {
+        display: inline-block !important;
+    }
+
+    .btn-nav {
+        width: 55px;
+        padding: 8px 0;
+        font-size: 18px;
+        flex: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn-flag {
+        flex: none;
+        width: auto;
+        min-width: 100px;
+        background: #fff;
+        border: 1px solid #dc3545;
+        color: #dc3545;
+        font-weight: bold;
+        border-radius: 5px;
+        padding: 8px 15px;
+        transition: 0.2s;
+    }
+
+    .btn-flag:active {
+        background: #dc3545;
+        color: #fff;
+    }
+
+    .mobile-tabs {
+        display: flex !important;
+        border-bottom: 2px solid #eee;
+        background: #fff;
+    }
+
+    .m-tab-btn {
+        flex: 1;
+        background: none;
+        border: none;
+        padding: 12px 0;
+        font-size: 16px;
+        font-weight: 600;
+        color: #888;
+        border-bottom: 3px solid transparent;
+        transition: 0.2s;
+    }
+
+    .m-tab-btn.active {
+        color: #007bff;
+        border-bottom: 3px solid #007bff;
+    }
+
+    .index-box {
+        display: none;
+        order: 1;
+        margin-top: 0;
+        background: #fff;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        height: auto;
+        flex: none;
+        margin-bottom: 0;
+        border: none;
+    }
+
+    #quiz-screen.show-mobile-index .question-box,
+    #quiz-screen.show-mobile-index .navigation-buttons {
+        display: none !important;
+    }
+
+    #quiz-screen.show-mobile-index .index-box {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .stats-box {
+        order: 2;
+        margin-top: 0;
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .btn-danger {
+        order: 3;
+    }
+
+    #quiz-screen .index-box .index-header {
+        height: 25px;
+        margin-bottom: 12px;
+        border-bottom: 1px dashed #bbb;
+        display: block;
+        position: relative;
+    }
+
+    #quiz-screen .index-box .index-header .index-title {
+        display: none;
+    }
+
+    #quiz-screen .index-box .index-header .btn-reset-icon {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        top: auto;
+        transform: none;
+        padding: 5px 10px;
+        font-size: 20px;
+        line-height: 1;
+        height: auto;
+        margin: 0;
+    }
+}
+
+@media (hover: none) and (pointer: coarse) {
+    .help-tooltip-container {
+        display: none !important;
+    }
+
+    .flag-btn {
+        pointer-events: none;
+    }
+
+    * {
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
+    }
+
+    .btn-reset-icon,
+    #quiz-screen .index-box .index-header .btn-reset-icon {
+        font-size: 22px;
+        padding: 5px 10px;
+    }
+
+    .btn-reset-icon:active,
+    #quiz-screen .index-box .index-header .btn-reset-icon:active {
+        transform: rotate(180deg);
+    }
+}
