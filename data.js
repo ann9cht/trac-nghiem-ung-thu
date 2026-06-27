@@ -5653,5 +5653,59 @@ const database = [
                 correctIndex: 0
             }
         ]
+    },
+    // =========================================================================
+    //                          Bài 13. Ung thư dạ dày
+    // =========================================================================
+    {
+        title: "Bài 13. Ung thư dạ dày",
+        questions: [
+            {
+                q: "Đại thể ung thư dạ dày có mấy thể:",
+                options: [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ],
+                correctIndex: 2
+            },
+        ]
+    },
+    // =========================================================================
+    //                       Bài 14. Ung thư đại trực tràng
+    // =========================================================================
+    {
+        title: "Bài 14. Ung thư đại trực tràng",
+        questions: [
+            {
+                q: "Thăm trực tràng trong ung thư đại trực tràng có ý nghĩa:",
+                options: [
+                    "Phát hiện các khối u ở vị trí trực tràng, hậu môn, mức độ di động của khối u, tính chất của khối u sờ thấy",
+                    "Đã có nội soi trực tràng nên không cần thăm trực tràng",
+                    "Thăm trực tràng chỉ có ý nghĩa với các khối u ở ngay sát hậu môn",
+                    "Phát hiện hạch vùng chậu"
+                ],
+                correctIndex: 0
+            },
+        ]
+    },
+    // =========================================================================
+    //                          Bài 15. Ung thư gan
+    // =========================================================================
+    {
+        title: "Bài 15. Ung thư gan",
+        questions: [
+            {
+                q: "Ung thư gan thường hay di căn đến cơ quan nào?",
+                options: [
+                    "Xương",
+                    "Não",
+                    "Phổi",
+                    "Phúc mạc"
+                ],
+                correctIndex: 2
+            },
+        ]
     }
 ];
